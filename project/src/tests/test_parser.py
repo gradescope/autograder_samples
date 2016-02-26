@@ -1,5 +1,5 @@
 import unittest
-from util import weight, tags
+from autograder_utils.decorators import weight, tags
 
 
 class TestParser(unittest.TestCase):

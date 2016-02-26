@@ -1,5 +1,5 @@
 import unittest
-from util import weight
+from autograder_utils.decorators import weight
 
 
 class TestEvaluator(unittest.TestCase):
