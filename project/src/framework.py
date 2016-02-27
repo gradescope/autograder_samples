@@ -1,12 +1,13 @@
 import re
 
+
 class Calculator:
     """
     """
-    DIGIT=re.compile('\d+')
-    WHITESPACE=re.compile('\s+')
-    OPERATOR=re.compile('[\+\-\*\/]')
-    PAREN=re.compile('[\(\)]')
+    DIGIT = re.compile('\d+')
+    WHITESPACE = re.compile('\s+')
+    OPERATOR = re.compile('[\+\-\*\/]')
+    PAREN = re.compile('[\(\)]')
 
     PRECEDENCES = {
         '+': 1,
@@ -76,8 +77,8 @@ class Calculator:
                 output.append(token)
             elif self.is_operator(token):
                 precedence = self.PRECEDENCES[token]
-                while len(operator_stack)>0 and \
-                      self.PRECEDENCES[operator_stack[-1]] > precedence:
+                while len(operator_stack) > 0 and \
+                        self.PRECEDENCES[operator_stack[-1]] > precedence:
                     output.append(operator_stack.pop())
                 operator_stack.append(token)
             elif token == "(":
@@ -85,7 +86,7 @@ class Calculator:
             elif token == ")":
                 while operator_stack[-1] != "(":
                     output.append(operator_stack.pop())
-                operator_stack.pop() # Pop the left paren
+                operator_stack.pop()  # Pop the left paren
         while len(operator_stack) > 0:
             output.append(operator_stack.pop())
         return output
