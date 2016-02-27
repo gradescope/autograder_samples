@@ -107,7 +107,7 @@ class Calculator:
                     if token == '+':
                         val = op1 + op2
                     elif token == '-':
-                        val = op1 - op2
+                        val = op2 - op1
                     elif token == '*':
                         val = op1 * op2
                     elif token == '/':

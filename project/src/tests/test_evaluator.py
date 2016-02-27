@@ -16,13 +16,20 @@ class TestEvaluator(unittest.TestCase):
 
     @weight(1)
     def test_eval2(self):
+        """Test evaluating 2-1"""
+        rpn = [2, 1, "-"]
+        val = self.calc.eval(rpn)
+        self.assertEqual(val, 1)
+
+    @weight(1)
+    def test_eval3(self):
         """Test evaluating (1+1)*4"""
         rpn = [1, 1, "+", 4, "*"]
         val = self.calc.eval(rpn)
         self.assertEqual(val, 8)
 
     @weight(1)
-    def test_eval3(self):
+    def test_eval4(self):
         """Test evaluating 8/4"""
         rpn = [8, 4, "/"]
         val = self.calc.eval(rpn)
