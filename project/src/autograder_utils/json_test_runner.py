@@ -36,7 +36,13 @@ class JSONTestResult(result.TestResult):
 
     def getOutput(self):
         if self.buffer:
-            return self._stdout_buffer.getvalue()
+            out = self._stdout_buffer.getvalue()
+            err = self._stderr_buffer.getvalue()
+            if err:
+                if not out.endswith('\n'):
+                    out += '\n'
+                out += err
+            return out
 
     def buildResult(self, test, passed):
         weight = self.getWeight(test)
@@ -59,10 +65,12 @@ class JSONTestResult(result.TestResult):
 
     def addError(self, test, err):
         super(JSONTestResult, self).addError(test, err)
+        print "ERROR:", err[1]
         self.results.append(self.buildResult(test, False))
 
     def addFailure(self, test, err):
         super(JSONTestResult, self).addFailure(test, err)
+        print "Test Failed:", str(err[1])
         self.results.append(self.buildResult(test, False))
 
 
