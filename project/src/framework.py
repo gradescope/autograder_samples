@@ -64,10 +64,9 @@ class Calculator:
             i = i + 1
         return tokens
 
-    def parse(self, string):
+    def parse(self, tokens):
         """Turns an infix arithmetic string into an RPN representation
         """
-        tokens = self.lexer(string)
         output = []
         operator_stack = []
         while len(tokens) > 0:
@@ -78,7 +77,7 @@ class Calculator:
             elif self.is_operator(token):
                 precedence = self.PRECEDENCES[token]
                 while len(operator_stack) > 0 and \
-                        self.PRECEDENCES[operator_stack[-1]] > precedence:
+                        precedence <= self.PRECEDENCES[operator_stack[-1]]:
                     output.append(operator_stack.pop())
                 operator_stack.append(token)
             elif token == "(":
@@ -112,7 +111,7 @@ class Calculator:
                     elif token == '*':
                         val = op1 * op2
                     elif token == '/':
-                        val = op1 / op2
+                        val = op2 / op1
                     stack.append(val)
         if len(stack) == 1:
             return stack[0]
@@ -122,7 +121,8 @@ class Calculator:
     def loop(self):
         line = self.read()
         while line != "quit":
-            ast = self.parse(line)
+            tokens = self.lexer(line)
+            ast = self.parse(tokens)
             value = self.eval(ast)
             print value
             # Read next line of input
