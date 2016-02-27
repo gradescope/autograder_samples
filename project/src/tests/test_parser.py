@@ -1,15 +1,27 @@
 import unittest
 from autograder_utils.decorators import weight, tags
+from framework import Calculator
 
 
 class TestParser(unittest.TestCase):
-    @weight(3)
-    @tags("parsing", "lexing")
-    def test_parse(self):
-        """Test parsing a simple expression"""
-        print "Printing inside a test case"
-        self.assertTrue(True)
+    def setUp(self):
+        self.calc = Calculator()
 
     @weight(1)
+    @tags("parsing")
+    def test_parse(self):
+        """Test parsing a simple expression"""
+        ast = self.calc.parse("1 + 1")
+        self.assertEqual(ast, [1, 1, "+"])
+
+    @weight(2)
     def test_parse2(self):
-        self.assertTrue(True)
+        """Test parsing with operator precedence"""
+        ast = self.calc.parse("1 + 1*4")
+        self.assertEqual(ast, [1, 1, 4, "*", "+"])
+
+    @weight(3)
+    def test_parse3(self):
+        """Test parsing with parentheses"""
+        ast = self.calc.parse("(1 + 1) * 4")
+        self.assertEqual(ast, [1, 1, "+", 4, "*"])
