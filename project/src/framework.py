@@ -1,20 +1,21 @@
 import re
 
 
-class Calculator:
+class Calculator(object):
     """
     """
-    DIGIT = re.compile('\d+')
+    # TODO Fillme
+    DIGIT = re.compile('\-?\d+')
     WHITESPACE = re.compile('\s+')
     OPERATOR = re.compile('[\+\-\*\/]')
     PAREN = re.compile('[\(\)]')
-
+    TOKEN_CLASSES = [DIGIT, WHITESPACE, OPERATOR, PAREN]
     PRECEDENCES = {
         '+': 1,
         '-': 1,
         '*': 2,
         '/': 2,
-        '(': 0,
+        '(': 0,  # For precedence matters, parens don't count
         ')': 0
     }
 
