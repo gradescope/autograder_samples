@@ -1,6 +1,6 @@
 import unittest
-from autograder_utils.decorators import weight, tags
-from framework import Calculator
+from gradescope_utils.autograder_utils.decorators import weight, tags
+from calculator import Calculator
 
 
 class TestLexer(unittest.TestCase):

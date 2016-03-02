@@ -1,6 +1,6 @@
 import unittest
-from autograder_utils.decorators import weight
-from framework import Calculator
+from gradescope_utils.autograder_utils.decorators import weight
+from calculator import Calculator
 
 
 class TestEvaluator(unittest.TestCase):

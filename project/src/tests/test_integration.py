@@ -1,5 +1,5 @@
 import unittest
-from autograder_utils.decorators import weight, tags
+from gradescope_utils.autograder_utils.decorators import weight, tags
 import subprocess32 as subprocess
 
 
