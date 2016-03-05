@@ -1,6 +1,15 @@
 # Place your imports here
 
 
+class CalculatorException(Exception):
+    """A class to throw if you come across incorrect syntax or other issues"""
+    def __init__(self, value):
+        self.value = value
+
+    def __str__(self):
+        return repr(self.value)
+
+
 class Calculator(object):
     """Infix calculator REPL
 
@@ -27,32 +36,19 @@ class Calculator(object):
         """
         return raw_input('> ')
 
-    def lexer(self, string):
-        """Break an input string into tokens"""
-        # TODO Implement me
-        pass
-
-    def parse(self, tokens):
-        """Turns an infix arithmetic string into an RPN representation
-        """
-        # TODO Implement me
-        pass
-
-    def eval(self, rpn):
-        """Evaluates an RPN expression in list form
-        """
-        # TODO Implement me
+    def eval(self, string):
+        """Evaluates an infix arithmetic expression"""
+        # TODO: Implement me
         pass
 
     def loop(self):
-        line = self.read()
-        while line != "quit":
-            tokens = self.lexer(line)
-            ast = self.parse(tokens)
-            value = self.eval(ast)
-            print value
-            # Read next line of input
-            line = self.read()
+        """Runs the read-eval-print loop
+
+        Read a line of input, evaluate it, and print it.
+
+        Repeat the above until the user types 'quit'."""
+        # TODO: Implement me
+        pass
 
 if __name__ == '__main__':
     calc = Calculator()

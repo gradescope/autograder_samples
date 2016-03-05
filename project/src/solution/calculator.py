@@ -1,10 +1,21 @@
 import re
 
 
+class CalculatorException(Exception):
+    """A class to throw if you come across incorrect syntax or other issues"""
+    def __init__(self, value):
+        self.value = value
+
+    def __str__(self):
+        return repr(self.value)
+
+
 class Calculator(object):
+    """Infix calculator REPL
+
+    Parses and evaluates infix arithmetic with the 4 basic operators
+    and parentheses. Must obey order of operations.
     """
-    """
-    # TODO Fillme
     DIGIT = re.compile('\-?\d+')
     WHITESPACE = re.compile('\s+')
     OPERATOR = re.compile('[\+\-\*\/]')
@@ -37,7 +48,7 @@ class Calculator(object):
         """
         return raw_input('> ')
 
-    def lexer(self, string):
+    def lex(self, string):
         """Break an input string into tokens"""
         tokens = []
         i = 0
@@ -61,13 +72,15 @@ class Calculator(object):
                 tokens.append(match.group())
                 i = match.end()
                 continue
-            print "Unknown character", string[i]
+            raise CalculatorException("Unknown character".format(string[i]))
             i = i + 1
         return tokens
 
     def parse(self, tokens):
-        """Turns an infix arithmetic string into an RPN representation
-        """
+        """Turns an infix arithmetic string into an RPN representation.
+
+        Uses the Shunting yard algorithm. This is used to resolve operator
+        precedence and handle parentheses."""
         output = []
         operator_stack = []
         while len(tokens) > 0:
@@ -91,9 +104,8 @@ class Calculator(object):
             output.append(operator_stack.pop())
         return output
 
-    def eval(self, rpn):
-        """Evaluates an RPN expression in list form
-        """
+    def eval_rpn(self, rpn):
+        """Evaluates an RPN expression in list form"""
         stack = []
         while len(rpn) > 0:
             token = rpn.pop(0)
@@ -101,7 +113,7 @@ class Calculator(object):
                 stack.append(token)
             else:  # token is an operator
                 if len(stack) < 2:
-                    raise Exception("Not enough inputs for operator", token)
+                    raise CalculatorException("Not enough inputs for operator {0}".format(token))
                 else:
                     op1 = stack.pop()
                     op2 = stack.pop()
@@ -117,14 +129,24 @@ class Calculator(object):
         if len(stack) == 1:
             return stack[0]
         else:
-            raise Exception("Too many input values")
+            raise CalculatorException("Too many input values")
+
+    def eval(self, string):
+        """Evaluates an infix arithmetic expression"""
+        tokens = self.lex(string)
+        ast = self.parse(tokens)
+        value = self.eval_rpn(ast)
+        return value
 
     def loop(self):
+        """Runs the read-eval-print loop
+
+        Read a line of input, evaluate it, and print it.
+
+        Repeat the above until the user types 'quit'."""
         line = self.read()
         while line != "quit":
-            tokens = self.lexer(line)
-            ast = self.parse(tokens)
-            value = self.eval(ast)
+            value = self.eval(line)
             print value
             # Read next line of input
             line = self.read()

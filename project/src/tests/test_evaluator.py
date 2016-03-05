@@ -8,29 +8,49 @@ class TestEvaluator(unittest.TestCase):
         self.calc = Calculator()
 
     @weight(2)
-    def test_eval(self):
-        """Test evaluating 1+1"""
-        rpn = [1, 1, "+"]
-        val = self.calc.eval(rpn)
+    def test_eval_add(self):
+        """Test evaluating 1 + 1"""
+        val = self.calc.eval("1 + 1")
         self.assertEqual(val, 2)
 
-    @weight(1)
-    def test_eval2(self):
-        """Test evaluating 2-1"""
-        rpn = [2, 1, "-"]
-        val = self.calc.eval(rpn)
+    @weight(2)
+    def test_eval_sub(self):
+        """Test evaluating 2 - 1"""
+        val = self.calc.eval("2 - 1")
         self.assertEqual(val, 1)
 
-    @weight(1)
-    def test_eval3(self):
+    @weight(2)
+    def test_eval_mul(self):
+        """Test evaluating 4 * 8"""
+        val = self.calc.eval("4 * 8")
+        self.assertEqual(val, 32)
+
+    @weight(2)
+    def test_eval_div(self):
+        """Test evaluating 8/4"""
+        val = self.calc.eval("8 / 4")
+        self.assertEqual(val, 2)
+
+    @weight(2)
+    def test_eval_whitespace(self):
+        """Test evaluating 1+1 (no whitespace)"""
+        val = self.calc.eval("1+1")
+        self.assertEqual(val, 2)
+
+    @weight(2)
+    def test_eval_parens(self):
         """Test evaluating (1+1)*4"""
-        rpn = [1, 1, "+", 4, "*"]
-        val = self.calc.eval(rpn)
+        val = self.calc.eval("(1 + 1) * 4")
         self.assertEqual(val, 8)
 
-    @weight(1)
-    def test_eval4(self):
-        """Test evaluating 8/4"""
-        rpn = [8, 4, "/"]
-        val = self.calc.eval(rpn)
-        self.assertEqual(val, 2)
+    @weight(2)
+    def test_eval_precedence(self):
+        """Test evaluating 1 + 1 * 8"""
+        val = self.calc.eval("1 + 1 * 8")
+        self.assertEqual(val, 9)
+
+    @weight(2)
+    def test_eval_mul_div(self):
+        "Test evaluating 8 / 4 * 2"
+        val = self.calc.eval("8 / 4 * 2")
+        self.assertEqual(val, 4)

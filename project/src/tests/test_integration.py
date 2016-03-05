@@ -7,7 +7,7 @@ class TestIntegration(unittest.TestCase):
     def setUp(self):
         pass
 
-    @weight(1)
+    @weight(2)
     @tags("integration")
     def test_single_input(self):
         """Tests the full REPL"""
@@ -21,7 +21,7 @@ class TestIntegration(unittest.TestCase):
         self.assertEqual(output, "2\n")
         calc.terminate()
 
-    @weight(1)
+    @weight(2)
     @tags("integration")
     def test_quit(self):
         """Test quitting the REPL"""
