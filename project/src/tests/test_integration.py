@@ -10,7 +10,7 @@ class TestIntegration(unittest.TestCase):
     @weight(2)
     @tags("integration")
     def test_single_input(self):
-        """Tests evaluating 1 + 1 in the REPL"""
+        """Evaluate 1 + 1 in the REPL"""
         calc = subprocess.Popen('python -u calculator.py'.split(),
                                 stdin=subprocess.PIPE, stdout=subprocess.PIPE)
         prompt = calc.stdout.read(2)  # Need to get the prompt off of stdout
@@ -24,7 +24,7 @@ class TestIntegration(unittest.TestCase):
     @weight(2)
     @tags("integration")
     def test_quit(self):
-        """Test quitting the REPL"""
+        """Quit the REPL"""
         calc = subprocess.Popen('python -u calculator.py'.split(),
                                 stdin=subprocess.PIPE, stdout=subprocess.PIPE)
         calc.stdin.write("quit\n")

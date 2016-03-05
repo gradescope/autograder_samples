@@ -9,6 +9,6 @@ class TestEvaluator(unittest.TestCase):
 
     @weight(2)
     def test_eval_power(self):
-        "Test evaluating 2 ** 8 (should raise an exception)"
+        """Evaluating 2 ** 8 should raise an exception"""
         with self.assertRaises(CalculatorException):
             self.calc.eval("2 ** 8")
