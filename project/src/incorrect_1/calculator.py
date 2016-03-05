@@ -1,4 +1,13 @@
-import re
+# Place your imports here
+
+
+class CalculatorException(Exception):
+    """A class to throw if you come across incorrect syntax or other issues"""
+    def __init__(self, value):
+        self.value = value
+
+    def __str__(self):
+        return repr(self.value)
 
 
 class Calculator(object):
@@ -7,31 +16,19 @@ class Calculator(object):
     Parses and evaluates infix arithmetic with the 4 basic operators
     and parentheses. Must obey order of operations.
     """
-    DIGIT = re.compile('\-?\d+')
-    WHITESPACE = re.compile('\s+')
-    OPERATOR = re.compile('[\+\-\*\/]')
-    PAREN = re.compile('[\(\)]')
-
-    PRECEDENCES = {
-        '+': 1,
-        '-': 1,
-        '*': 2,
-        '/': 2,
-        '(': 0,  # For precedence matters, parens don't count
-        ')': 0
-    }
 
     def is_digit(self, token):
-        return self.DIGIT.match(token)
+        # TODO: You may find these functions useful to implement
+        pass
 
     def is_operator(self, token):
-        return self.OPERATOR.match(token)
+        pass
 
     def is_paren(self, token):
-        return self.PAREN.match(token)
+        pass
 
     def is_operand(self, token):
-        return self.is_digit(token) or self.is_paren(token)
+        pass
 
     def read(self):
         """
@@ -39,80 +36,40 @@ class Calculator(object):
         """
         return raw_input('> ')
 
-    def lexer(self, string):
-        """Break an input string into tokens"""
-        t1 = string.split()
-        tokens = []
-        for t in t1:
-            try:
-                x = int(t)
-                tokens.append(x)
-            except ValueError:
-                tokens.append(t)
-        return tokens
+    def lex(self, string):
+        return string.split()
 
-    def parse(self, tokens):
-        """Turns an infix arithmetic string into an RPN representation
-        """
-        output = []
-        operator_stack = []
+    def eval(self, string):
+        """Evaluates an infix arithmetic expression"""
+        # TODO: Implement me
+        tokens = self.lex(string)
+        op1 = int(tokens.pop(0))
         while len(tokens) > 0:
-            token = tokens.pop(0)
-
-            if type(token) == int:
-                output.append(token)
-            elif self.is_operator(token):
-                precedence = self.PRECEDENCES[token]
-                while len(operator_stack) > 0 and \
-                        precedence <= self.PRECEDENCES[operator_stack[-1]]:
-                    output.append(operator_stack.pop())
-                operator_stack.append(token)
-            elif token == "(":
-                operator_stack.append(token)
-            elif token == ")":
-                while operator_stack[-1] != "(":
-                    output.append(operator_stack.pop())
-                operator_stack.pop()  # Pop the left paren
-        while len(operator_stack) > 0:
-            output.append(operator_stack.pop())
-        return output
-
-    def eval(self, rpn):
-        """Evaluates an RPN expression in list form
-        """
-        stack = []
-        while len(rpn) > 0:
-            token = rpn.pop(0)
-            if type(token) == int:
-                stack.append(token)
-            else:  # token is an operator
-                if len(stack) < 2:
-                    raise Exception("Not enough inputs for operator", token)
-                else:
-                    op1 = stack.pop()
-                    op2 = stack.pop()
-                    if token == '+':
-                        val = op1 + op2
-                    elif token == '-':
-                        val = op2 - op1
-                    elif token == '*':
-                        val = op1 * op2
-                    elif token == '/':
-                        val = op2 / op1
-                    stack.append(val)
-        if len(stack) == 1:
-            return stack[0]
-        else:
-            raise Exception("Too many input values")
+            operator = tokens.pop(0)
+            op2 = int(tokens.pop(0))
+            if operator == '+':
+                op1 = op1 + op2
+            elif operator == '-':
+                op1 = op1 - op2
+            elif operator == '*':
+                op1 = op1 * op2
+            elif operator == '/':
+                op1 = op1 / op2
+            else:
+                raise CalculatorException("Unknown operator %s" % operator)
+        return op1
 
     def loop(self):
+        """Runs the read-eval-print loop
+
+        Read a line of input, evaluate it, and print it.
+
+        Repeat the above until the user types 'quit'."""
+        # TODO: Implement me
         line = self.read()
         while line != "quit":
-            tokens = self.lexer(line)
-            ast = self.parse(tokens)
-            value = self.eval(ast)
+            value = self.eval(line)
             print value
-            # Read next line of input
             line = self.read()
 
 if __name__ == '__main__':
