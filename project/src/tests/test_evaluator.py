@@ -1,6 +1,6 @@
 import unittest
 from gradescope_utils.autograder_utils.decorators import weight
-from calculator import Calculator, CalculatorException
+from calculator import Calculator
 
 
 class TestEvaluator(unittest.TestCase):
@@ -30,9 +30,3 @@ class TestEvaluator(unittest.TestCase):
         "Test evaluating -2 + 6"
         val = self.calc.eval("-2 + 6")
         self.assertEqual(val, 4)
-
-    @weight(2)
-    def test_eval_power(self):
-        "Test evaluating 2 ** 8 (should raise an exception)"
-        with self.assertRaises(CalculatorException):
-            self.calc.eval("2 ** 8")
