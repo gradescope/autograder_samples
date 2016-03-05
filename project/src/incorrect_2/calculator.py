@@ -18,9 +18,7 @@ class Calculator(object):
     """
 
     def read(self):
-        """
-        Read input from stdin
-        """
+        """Read input from stdin"""
         return raw_input('> ')
 
     def eval(self, string):

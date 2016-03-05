@@ -18,9 +18,7 @@ class Calculator(object):
     """
 
     def read(self):
-        """
-        Read input from stdin
-        """
+        """Read input from stdin"""
         return raw_input('> ')
 
     def eval(self, string):
@@ -34,7 +32,8 @@ class Calculator(object):
         Read a line of input, evaluate it, and print it.
 
         Repeat the above until the user types 'quit'."""
-        # TODO: Implement me
+        line = self.read()
+        # TODO: Implement the loop
         pass
 
 if __name__ == '__main__':

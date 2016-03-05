@@ -18,12 +18,11 @@ class Calculator(object):
     """
 
     def read(self):
-        """
-        Read input from stdin
-        """
+        """Read input from stdin"""
         return raw_input('> ')
 
     def lex(self, string):
+        """Break the string up into tokens"""
         return string.split()
 
     def eval(self, string):

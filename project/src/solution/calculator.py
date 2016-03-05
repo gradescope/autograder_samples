@@ -43,9 +43,7 @@ class Calculator(object):
         return self.is_digit(token) or self.is_paren(token)
 
     def read(self):
-        """
-        Read input from stdin
-        """
+        """Read input from stdin"""
         return raw_input('> ')
 
     def lex(self, string):

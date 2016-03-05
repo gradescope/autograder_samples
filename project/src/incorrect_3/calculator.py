@@ -43,9 +43,7 @@ class Calculator(object):
         return self.is_digit(token) or self.is_paren(token)
 
     def read(self):
-        """
-        Read input from stdin
-        """
+        """Read input from stdin"""
         return raw_input('> ')
 
     def lex(self, string):
@@ -144,11 +142,12 @@ class Calculator(object):
         Read a line of input, evaluate it, and print it.
 
         Repeat the above until the user types 'quit'."""
+        line = self.read()
         quit = False
         while not quit:
-            line = self.read()
             value = self.eval(line)
             print value
+            line = self.read()
             quit = line == 'quit'
 
 if __name__ == '__main__':
