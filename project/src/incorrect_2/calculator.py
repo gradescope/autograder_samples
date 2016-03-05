@@ -32,10 +32,7 @@ class Calculator(object):
 
         Repeat the above until the user types 'quit'."""
         line = self.read()
-        while line != "quit":
-            value = self.eval(line)
-            print value
-            line = self.read()
+        pass
 
 if __name__ == '__main__':
     calc = Calculator()
