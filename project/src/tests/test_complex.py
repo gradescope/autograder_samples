@@ -3,7 +3,7 @@ from gradescope_utils.autograder_utils.decorators import weight
 from calculator import Calculator
 
 
-class TestEvaluator(unittest.TestCase):
+class TestComplex(unittest.TestCase):
     def setUp(self):
         self.calc = Calculator()
 
