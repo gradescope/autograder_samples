@@ -17,19 +17,6 @@ class Calculator(object):
     and parentheses. Must obey order of operations.
     """
 
-    def is_digit(self, token):
-        # TODO: You may find these functions useful to implement
-        pass
-
-    def is_operator(self, token):
-        pass
-
-    def is_paren(self, token):
-        pass
-
-    def is_operand(self, token):
-        pass
-
     def read(self):
         """
         Read input from stdin
