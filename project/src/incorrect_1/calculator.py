@@ -28,7 +28,6 @@ class Calculator(object):
 
     def eval(self, string):
         """Evaluates an infix arithmetic expression"""
-        # TODO: Implement me
         tokens = self.lex(string)
         op1 = int(tokens.pop(0))
         while len(tokens) > 0:
@@ -52,7 +51,6 @@ class Calculator(object):
         Read a line of input, evaluate it, and print it.
 
         Repeat the above until the user types 'quit'."""
-        # TODO: Implement me
         line = self.read()
         while line != "quit":
             value = self.eval(line)
