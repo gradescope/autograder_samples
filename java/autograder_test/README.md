@@ -52,3 +52,25 @@ dependencies, Java compiler version, and main class.
 This file and the project structure were generated using the command
 
 `mvn archetype:generate -DgroupId=com.gradescope.autograder_test -DartifactId=autograder_test -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false`
+
+## [IntListTest.java](src/main/java/com/gradescope/autograder_test/IntListTest.java)
+
+This is the actual Test class. It imports the necessary parts of
+jh61b, JUnit, and the student's code. Then, it runs a set of basic
+tests on the student's code.
+
+## [IntList.java](src/main/java/com/gradescope/autograder_test/IntList.java)
+
+This is a "reference implementation" of the IntList class. It's just a
+linked list for ints. One possible approach to writing tests is to
+have your reference implementation as part of your autograder, and
+compare the student's return values to the reference
+implementation. Also, if you need to rely on certain functions in the
+student's code working for some tests, you should use your reference
+implementation to set up the test data structures and then call the
+student's code.
+
+You can also submit this code to the autograder to see it work. In the
+current version of the autograder it relies on the student's code
+being in the same package as the autograder, for simplicity, but this
+could be changed.
