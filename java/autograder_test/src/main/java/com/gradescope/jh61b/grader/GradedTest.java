@@ -44,6 +44,6 @@ public @interface GradedTest {
     }
 
     String name() default "Unnamed test";
-    String number() default "Unnumbered test";
+    String number() default "";
     double max_score() default 1.0;
 }

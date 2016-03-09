@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+cd /autograder/source
+
+# Make sure student has the right package name in their file
+cp /autograder/submission/IntList.java /autograder/source/src/main/java/com/gradescope/autograder_test/
+
+mvn -q compile
+mvn -q exec:java > /autograder/results/results.json
