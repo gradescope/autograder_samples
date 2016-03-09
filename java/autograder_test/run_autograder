@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+cd /autograder/source
+
+# Copy the student's code into the autograder directory. Make sure
+# student has the right package name in their file and that it's in
+# the right place
+#
+# Alternatively, you could run something like $(find . -name
+# IntList.java) to find the location of this file. But it'll probably
+# be easier to require them to submit their files in a certain
+# directory structure; either everything in the root or a full package
+# hierarchy structure. For single file assignments, the root way is
+# probably easier.
+cp /autograder/submission/IntList.java /autograder/source/src/main/java/com/gradescope/autograder_test/
+
+# Compile the student's code with autograder code
+./compile.sh
+
+# Run the autograder code
+./run.sh
