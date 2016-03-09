@@ -11,7 +11,7 @@ for producing output in JSON format.
 - JDK8: jh61b uses String.join() which is added in JDK8. If you need versions <8, you just need to replace this part of the code
 - Maven: Build tool. Provides dependency resolution (only needed for JUnit and exec plugin in this project) and a way to compile and execute code (using exec plugin)
 
-## setup.sh
+## [setup.sh](setup.sh)
 
 Sets up JDK 8 and maven. There's a workaround for a ca-certificates
 issue to make sure you can install things from Maven.
@@ -44,7 +44,7 @@ specify a main class to execute (see pom.xml). This lets you avoid
 having to figure out the proper java command to run and classpath
 arguments and such.
 
-## pom.xml
+## [pom.xml](pom.xml)
 
 This is a maven project file. Briefly, it describes the project, its
 dependencies, Java compiler version, and main class.
