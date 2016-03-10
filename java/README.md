@@ -53,37 +53,25 @@ produces output in the *classes* directory.
 This script just runs the IntListTest class. It adds the compiled
 classes and bundled libraries to the classpath.
 
-## [IntListTest.java](src/main/java/com/gradescope/intlist/test/IntListTest.java)
-
-This is the actual Test class. It imports the necessary parts of
-jh61b, JUnit, and the student's code. Then, it runs a set of basic
-tests on the student's code.
-
-## [IntListPredicates.java](src/main/java/com/gradescope/intlist/test/IntListPredicates.java)
-
-This is another Test class, just to demonstrate multi-class test suites.
-
-## [RunTests.java](src/main/java/com/gradescope/intlist/test/RunTests.java)
-
-This class actually runs the tests. This demonstrates setting up a
-Suite in JUnit.
 
 ## [AbstractIntList.java](src/main/java/com/gradescope/intlist/AbstractIntList.java)
 
 This is the abstract base class for the students' IntList
-implementation. It has a constructor and .equals() method implemented,
-so that you can rely on those things being consistent in your tests.
+implementation. It's essentially a linked list for ints, with a few
+operations you can do on it.  It has a constructor and .equals()
+method implemented, so that you can rely on those things being
+consistent in your tests.
 
 ## [RefIntList.java](src/main/java/com/gradescope/intlist/RefIntList.java)
 
-This is a "reference implementation" of the IntList class. It's just a
-linked list for ints. One possible approach to writing tests is to
-have your reference implementation as part of your autograder, and
-compare the student's return values to the reference
-implementation. Also, if you need to rely on certain functions in the
-student's code working for some tests, you should use your reference
-implementation to set up the test data structures and then call the
-student's code.
+This is a "reference implementation" of the IntList class. One
+possible approach to writing tests is to have your reference
+implementation as part of your autograder, and compare the student's
+return values to the reference implementation. Also, if you need to
+rely on certain functions in the student's code working for some
+tests, you should use your reference implementation to set up the test
+data structures and then call the student's code. For Java, this may
+require setting up a copy constructor in your students' class.
 
 ## [IntList.java](src/main/java/com/gradescope/intlist/IntList.java)
 
@@ -101,3 +89,18 @@ this can't be done in the abstract parent class.
 This is an example solution. It's just the reference implementation
 with the name changed. You can submit this to Gradescope to see how it
 works.
+
+## [IntListTest.java](src/main/java/com/gradescope/intlist/test/IntListTest.java)
+
+This is the actual Test class. It imports the necessary parts of
+jh61b, JUnit, and the student's code. Then, it runs a set of basic
+tests on the student's code.
+
+## [IntListPredicates.java](src/main/java/com/gradescope/intlist/test/IntListPredicates.java)
+
+This is another Test class, just to demonstrate multi-class test suites.
+
+## [RunTests.java](src/main/java/com/gradescope/intlist/test/RunTests.java)
+
+This class actually runs the tests. This demonstrates setting up a
+Suite in JUnit.
