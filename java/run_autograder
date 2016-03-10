@@ -5,7 +5,7 @@ cd /autograder/source
 # Copy the student's code into the autograder directory. Make sure
 # student has the right package name in their file and that it's in
 # the right place
-cp /autograder/submission/IntList.java /autograder/source/src/main/java/com/gradescope/autograder_test/
+cp /autograder/submission/IntList.java /autograder/source/src/main/java/com/gradescope/intlist/
 
 # Compile the student's code with autograder code
 ./compile.sh
