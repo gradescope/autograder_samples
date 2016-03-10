@@ -10,6 +10,8 @@ producing output in JSON format.
 - jh61b: Among other things, this provides annotations for JUnit tests that allows setting point values and names, and a test listener that produces output in JSON format
 - JDK8: jh61b uses String.join() which is added in JDK8. If you need versions <8, you just need to replace this part of the code
 
+# Files
+
 ## [setup.sh](setup.sh)
 
 Sets up OpenJDK 8.
