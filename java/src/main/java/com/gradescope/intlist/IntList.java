@@ -4,8 +4,21 @@ import com.gradescope.intlist.AbstractIntList;
 
 public class IntList extends AbstractIntList{
 
+    /**
+     * Calls the parent constructor
+     */
     public IntList(int head){
         super(head);
+    }
+
+    /**
+     * This copy constructor is needed for test cases; do not touch
+     */
+    public IntList(AbstractIntList list){
+        this(list.head);
+        if(list.next != null){
+            this.next = new IntList(list.next);
+        }
     }
     /**
      * Creates an IntList from a variable number of arguments

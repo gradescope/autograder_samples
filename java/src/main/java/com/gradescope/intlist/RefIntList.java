@@ -1,4 +1,4 @@
-package com.gradescope.intlist.reference;
+package com.gradescope.intlist;
 
 import com.gradescope.intlist.AbstractIntList;
 
@@ -8,6 +8,15 @@ public class RefIntList extends AbstractIntList{
         super(head);
     }
 
+    /**
+     * This copy constructor is needed for test cases; do not touch
+     */
+    public RefIntList(AbstractIntList list){
+        this(list.head);
+        if(list.next != null){
+            this.next = new RefIntList(list.next);
+        }
+    }
     /**
      * Creates an IntList from a variable number of arguments
      */
@@ -37,6 +46,7 @@ public class RefIntList extends AbstractIntList{
      * Returns true if the IntList contains the value
      */
     public boolean contains(int value){
+        System.out.println("Reference");
         if(this.head == value){
             return true;
         }else if(this.next != null){
