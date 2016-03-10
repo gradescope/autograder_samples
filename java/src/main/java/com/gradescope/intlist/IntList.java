@@ -42,7 +42,10 @@ public class IntList extends AbstractIntList{
     }
 
     /**
-     * Converts an IntList to a string
+     * Converts an IntList to a string.
+     *
+     * The last element should be
+     * followed by a newline instead of a space.
      */
     public String toString(){
         // TODO: FIll me in!

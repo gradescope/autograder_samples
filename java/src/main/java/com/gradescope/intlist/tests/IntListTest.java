@@ -23,4 +23,11 @@ public class IntListTest {
         test.append(32);
         assertEquals(test, RefIntList.createList(1, 2, 4, 8, 16, 32));
     }
+
+    @Test
+    @GradedTest(name="Test converting a list to a string", max_score=1)
+    public void test_to_string() {
+        AbstractIntList test = new IntList(RefIntList.createList(1, 2, 4, 8, 16));
+        assertEquals(test.toString(), "1 2 4 8 16\n");
+    }
 }

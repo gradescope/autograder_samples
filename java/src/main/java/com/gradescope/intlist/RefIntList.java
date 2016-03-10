@@ -58,6 +58,9 @@ public class RefIntList extends AbstractIntList{
 
     /**
      * Converts an IntList to a string
+     *
+     * The last element should be
+     * followed by a newline instead of a space.
      */
     public String toString(){
         if(this.next != null){

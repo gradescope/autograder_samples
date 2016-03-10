@@ -34,6 +34,11 @@ autograder code should know what package to import from, so make sure
 that you know ahead of time what the student's package is (i.e. tell
 them what to do or set up a template that has it filled in).
 
+You could also do something like `$(find . -name "IntList.java")` in
+your bash script and copy the result of that to the destination, but
+it's probably better to just require them to submit in a certain
+structure, which Gradescope will in the future make easier to verify.
+
 This script calls compile.sh and run.sh to compile and run code.
 
 ### [compile.sh](compile.sh)
@@ -48,13 +53,28 @@ produces output in the *classes* directory.
 This script just runs the IntListTest class. It adds the compiled
 classes and bundled libraries to the classpath.
 
-## [IntListTest.java](src/main/java/com/gradescope/autograder_test/IntListTest.java)
+## [IntListTest.java](src/main/java/com/gradescope/intlist/test/IntListTest.java)
 
 This is the actual Test class. It imports the necessary parts of
 jh61b, JUnit, and the student's code. Then, it runs a set of basic
 tests on the student's code.
 
-## [IntList.java](src/main/java/com/gradescope/autograder_test/IntList.java)
+## [IntListPredicates.java](src/main/java/com/gradescope/intlist/test/IntListPredicates.java)
+
+This is another Test class, just to demonstrate multi-class test suites.
+
+## [RunTests.java](src/main/java/com/gradescope/intlist/test/RunTests.java)
+
+This class actually runs the tests. This demonstrates setting up a
+Suite in JUnit.
+
+## [AbstractIntList.java](src/main/java/com/gradescope/intlist/AbstractIntList.java)
+
+This is the abstract base class for the students' IntList
+implementation. It has a constructor and .equals() method implemented,
+so that you can rely on those things being consistent in your tests.
+
+## [RefIntList.java](src/main/java/com/gradescope/intlist/RefIntList.java)
 
 This is a "reference implementation" of the IntList class. It's just a
 linked list for ints. One possible approach to writing tests is to
@@ -65,7 +85,19 @@ student's code working for some tests, you should use your reference
 implementation to set up the test data structures and then call the
 student's code.
 
-You can also submit this code to the autograder to see it work. In the
-current version of the autograder it relies on the student's code
-being in the same package as the autograder, for simplicity, but this
-could be changed.
+## [IntList.java](src/main/java/com/gradescope/intlist/IntList.java)
+
+This is the template file that you would give to students to fill
+in. It has some parts filled in that should be kept by students; in
+particular, the copy constructor is used in the tests to allow setting
+up a test using the reference implementation and then copying the data
+to an instance of the student's implementation so that you can test
+individual functions in isolation instead of relying on students to
+implement basic functionality correctly. Due to the way Java works
+this can't be done in the abstract parent class.
+
+## [IntList.java solution](solution/IntList.java)
+
+This is an example solution. It's just the reference implementation
+with the name changed. You can submit this to Gradescope to see how it
+works.

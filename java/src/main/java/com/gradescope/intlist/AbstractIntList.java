@@ -21,6 +21,9 @@ public abstract class AbstractIntList{
 
     /**
      * Converts an AbstractIntList to a string
+     *
+     * The last element should be
+     * followed by a newline instead of a space.
      */
     public abstract String toString();
 
