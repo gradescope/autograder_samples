@@ -92,17 +92,17 @@ This is an example solution. It's just the reference implementation
 with the name changed. You can submit this to Gradescope to see how it
 works.
 
-## [IntListTest.java](src/main/java/com/gradescope/intlist/test/IntListTest.java)
+## [IntListTest.java](src/main/java/com/gradescope/intlist/tests/IntListTest.java)
 
 This is the actual Test class. It imports the necessary parts of
 jh61b, JUnit, and the student's code. Then, it runs a set of basic
 tests on the student's code.
 
-## [IntListPredicates.java](src/main/java/com/gradescope/intlist/test/IntListPredicates.java)
+## [IntListPredicates.java](src/main/java/com/gradescope/intlist/tests/IntListPredicates.java)
 
 This is another Test class, just to demonstrate multi-class test suites.
 
-## [RunTests.java](src/main/java/com/gradescope/intlist/test/RunTests.java)
+## [RunTests.java](src/main/java/com/gradescope/intlist/tests/RunTests.java)
 
 This class actually runs the tests. This demonstrates setting up a
 Suite in JUnit.
