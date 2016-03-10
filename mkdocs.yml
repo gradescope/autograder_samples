@@ -1,0 +1,11 @@
+site_name: Gradescope Autograder Documentation
+repo_url: https://github.com/gradescope/autograder_samples
+docs_dir: .
+theme: readthedocs
+extra_css: [gradescope.css]
+pages:
+- 'Home': index.md
+- 'Examples':
+    - 'Java': java/index.md
+    - 'Java+Maven': java-mvn/index.md
+    - 'Python': python/index.md
