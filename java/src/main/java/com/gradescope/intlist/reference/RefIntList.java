@@ -1,23 +1,22 @@
-package com.gradescope.autograder_test;
+package com.gradescope.intlist.reference;
 
-public class IntList{
-    int head;
-    IntList next;
+import com.gradescope.intlist.AbstractIntList;
 
-    public IntList(int head){
-        this.head = head;
-        this.next = null;
+public class RefIntList extends AbstractIntList{
+
+    public RefIntList(int head) {
+        super(head);
     }
 
     /**
      * Creates an IntList from a variable number of arguments
      */
-    public static IntList createList(int... a){
-        IntList head = new IntList(a[0]);
-        IntList prev = head;
+    public static AbstractIntList createList(int... a){
+        RefIntList head = new RefIntList(a[0]);
+        RefIntList prev = head;
         for(int i=1; i < a.length; i++){
-            prev.next = new IntList(a[i]);
-            prev = prev.next;
+            prev.next = new RefIntList(a[i]);
+            prev = (RefIntList) prev.next;
         }
         return head;
     }
@@ -25,9 +24,9 @@ public class IntList{
     /**
      * Appends value to the end of the list
      */
-    public IntList append(int value){
+    public AbstractIntList append(int value){
         if(this.next == null){
-            this.next = new IntList(value);
+            this.next = new RefIntList(value);
             return this.next;
         }else{
             return this.next.append(value);
