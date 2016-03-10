@@ -24,48 +24,30 @@ public class IntList extends AbstractIntList{
      * Creates an IntList from a variable number of arguments
      */
     public static AbstractIntList createList(int... a){
-        IntList head = new IntList(a[0]);
-        IntList prev = head;
-        for(int i=1; i < a.length; i++){
-            prev.next = new IntList(a[i]);
-            prev = (IntList) prev.next;
-        }
-        return head;
+        // TODO: Fill me in!
     }
 
     /**
      * Appends value to the end of the list
      */
     public AbstractIntList append(int value){
-        if(this.next == null){
-            this.next = new IntList(value);
-            return this.next;
-        }else{
-            return this.next.append(value);
-        }
+        // TODO: Fill me in!
     }
 
     /**
      * Returns true if the IntList contains the value
      */
     public boolean contains(int value){
-        if(this.head == value){
-            return true;
-        }else if(this.next != null){
-            return this.next.contains(value);
-        }else{
-            return false;
-        }
+        // TODO: Fill me in!
     }
 
     /**
-     * Converts an IntList to a string
+     * Converts an IntList to a string.
+     *
+     * The last element should be
+     * followed by a newline instead of a space.
      */
     public String toString(){
-        if(this.next != null){
-            return this.head + " " + this.next.toString();
-        }else{
-            return this.head + "\n";
-        }
+        // TODO: FIll me in!
     }
 }
