@@ -11,4 +11,4 @@ cp /autograder/submission/IntList.java /autograder/source/src/main/java/com/grad
 ./compile.sh
 
 # Run the autograder code
-./run.sh
+./run.sh > /autograder/results/results.json
