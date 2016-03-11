@@ -1,6 +1,6 @@
 Welcome to Gradescope Autograder Documentation!
 
-[![Documentation Status](https://readthedocs.org/projects/autograder-samples/badge/?version=latest)](http://autograder-samples.readthedocs.org/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/gradescope-autograders/badge/?version=latest)](http://gradescope-autograders.readthedocs.org/en/latest/?badge=latest)
 
 # Autograder specifications
 
