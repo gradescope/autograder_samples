@@ -45,4 +45,7 @@ before allowing students to submit.
 Once the release date arrives, students will be allowed to submit
 their homework. They'll receive feedback as soon as the autograder
 finishes running. You can control what feedback they receive in the
-output file format.
+output file format. They'll see a list of test cases that they've
+passed and failed, and any output you provide.
+
+[![Student results](results.png)](results.png)
