@@ -1,5 +1,3 @@
-Welcome to Gradescope Autograder Documentation!
-
 [![Documentation Status](https://readthedocs.org/projects/gradescope-autograders/badge/?version=latest)](http://gradescope-autograders.readthedocs.org/en/latest/?badge=latest)
 
 # Overview
