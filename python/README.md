@@ -1,12 +1,12 @@
-% Infix Calculator REPL
+# Infix Calculator REPL
 
-# Introduction
+## Introduction
 
 In this assignment, you will build an infix calculator REPL. The goal
 of this project is to teach you the basics of parsing and evaluating a
 simple language.
 
-# Requirements
+## Requirements
 
 * Build an infix calculator read-eval-print loop
 * The calculator should handle the 4 basic operations, +, -, *, /, with operator precedence
@@ -14,7 +14,7 @@ simple language.
 * If the user types 'quit', exit the program
 * If there are syntax errors in the user input, raise CalculatorException
 
-# Submitting your work
+## Submitting your work
 
 Start from the provided skeleton in `framework.py`. Rename it to
 `calculator.py`, and fill in the eval and loop functions.
