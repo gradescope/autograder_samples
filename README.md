@@ -28,6 +28,6 @@ and use them as a starting point for your own autograders. If you have
 any further questions, feel free to contact us at
 [help@gradescope.com](mailto:help@gradescope.com)
 
-- [Java (JUnit)](java/)
-  - [Java+maven](java-mvn/)
 - [Python](python/)
+- [Java (JUnit)](java/)
+  - [Java+Maven](java-mvn/)
