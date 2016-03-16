@@ -1,3 +1,4 @@
+from __future__ import print_function
 import re
 
 
@@ -145,7 +146,7 @@ class Calculator(object):
         line = self.read()
         while line != "quit":
             value = self.eval(line)
-            print value
+            print(value)
             # Read next line of input
             line = self.read()
 
