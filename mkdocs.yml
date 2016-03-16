@@ -9,6 +9,6 @@ pages:
 - 'Autograder Specifications': specs.md
 - 'Technical Details': tech.md
 - 'Examples':
+    - 'Python': python/index.md
     - 'Java': java/index.md
     - 'Java+Maven': java-mvn/index.md
-    - 'Python': python/index.md
