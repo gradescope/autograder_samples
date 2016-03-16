@@ -42,7 +42,7 @@ docstring. This is a `unittest` convention. The weight for each test is
 given by the `@weight` decorator.
 
 See all tests
-[here](https://github.com/gradescope/autograder_samples/src/tests)
+[here](https://github.com/gradescope/autograder_samples/tree/mastersrc/tests)
 
 ## Running Tests
 
