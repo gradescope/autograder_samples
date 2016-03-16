@@ -1,8 +1,15 @@
 # Gradescope Java Autograder Example
 
+[View project source on Github](https://github.com/gradescope/autograder_samples/tree/master/java)
+
 This example shows how to set up an autograder on Gradescope for a
 Java project. It uses JUnit, JDK8, and Josh Hug's jh61b library for
 producing output in JSON format.
+
+## Project Description
+
+This project builds a simple Linked List that stores ints as data
+values.
 
 ## Explanation of Dependencies
 
