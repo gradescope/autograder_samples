@@ -22,7 +22,7 @@ All autograder related files will be in the /autograder directory.
 
 ## Output format
 
-Your autograder's output should be in the following format:
+Your autograder's output should be in the file results.json, in the following format:
 
 ```
 { "score": 44.0, // optional, but required if not on each test case below
