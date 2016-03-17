@@ -24,9 +24,7 @@ values.
 Sets up OpenJDK 8.
 
 Note: Installing JDK8 takes a few minutes, so building the image takes
-a while. We may want to provide base images with JDK installed to
-speed that up, though it's really only a few minutes once so it might
-not matter to you.
+a while. We may later provide base images to speed this up.
 
 ## [run_autograder](run_autograder)
 
