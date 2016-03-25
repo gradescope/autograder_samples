@@ -18,8 +18,7 @@ a simple language.
 
 ## Dependencies (for tests)
 
-- Python 2.7+ (should work with Python 3 as well if students use it; the tests don't use anything Python2 specific)
-- Python's unittest module is built in
+- Python 2.7+/3+
 - gradescope-utils provides annotations for setting point values for tests, and running tests with a JSON output.
 - subprocess32 is a convenient backport of Python 3.2's subprocess module. Used in one of the tests to communicate with an instance of the REPL to verify that it responds to input correctly.
 
