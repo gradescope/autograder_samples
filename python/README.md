@@ -8,7 +8,7 @@ In this assignment, students will build an infix calculator REPL. The
 goal of this project is to teach the basics of parsing and evaluating
 a simple language.
 
-### Requirements
+**Requirements**
 
 * Build an infix calculator read-eval-print loop
 * The calculator should handle the 4 basic operations, +, -, *, /, with operator precedence
