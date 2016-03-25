@@ -20,6 +20,9 @@ request. Students submit to Gradescope and have their work evaluated
 on demand. They can submit as many times as they want. At the end of
 the process, you can download their code and their results.
 
+Follow our **[instructions](getting_started)** to get started with
+autograding.
+
 # Examples
 
 If you want to jump right in, we have built the following examples for
