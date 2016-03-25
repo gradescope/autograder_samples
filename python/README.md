@@ -1,6 +1,6 @@
 # Gradescope Python Autograder Example
 
-[View project source on Github](https://github.com/gradescope/autograder_samples/tree/master/python/src) - [autograder.zip](python/src/autograder.zip) - [sample solution](python/src/solution/calculator.py)
+[View project source on Github](https://github.com/gradescope/autograder_samples/tree/master/python/src) - [autograder.zip](https://github.com/gradescope/autograder_samples/raw/master/python/src/autograder.zip) - [sample solution](https://github.com/gradescope/autograder_samples/raw/master/python/src/solution/calculator.py)
 
 ## Project Description
 
