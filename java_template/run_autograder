@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+cd /autograder/source
+
+# Copy the student's code into the autograder directory. Make sure
+# student has the right package name in their file and that it's in
+# the right place
+cp /autograder/submission/StudentFile.java /autograder/source/src/edu/youruniversity/hw1/
+
+# Compile the student's code with autograder code
+./compile.sh
+
+# Run the autograder code
+./run.sh > /autograder/results/results.json
