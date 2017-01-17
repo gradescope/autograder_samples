@@ -15,9 +15,14 @@ contain at least two files in the root of the archive:
 
 All autograder related files will be in the /autograder directory.
 
+Files you provide:
+
 - **/autograder/source** contains the contents of your autograder zip file.
-- **/autograder/submission** contains the student's submission, downloaded from Gradescope.
 - **/autograder/results/results.json** is where you put the test output that is uploaded to Gradescope.
+
+Files gradescope provides:
+
+- **/autograder/submission** contains the student's submission, downloaded from Gradescope.
 - **/autograder/results/stdout** captures the output of run_autograder, for displaying back to the instructor for debugging purposes. Any output you wish to show to students must be explicitly put in the JSON "output" field.
 
 ## Output format
@@ -42,7 +47,6 @@ Your autograder's output should be in the file results.json, in the following fo
     ]
 }
 ```
-
 
 For Java and Python, we have helper libraries that integrate with
 JUnit and unittest to produce this output format easily.
