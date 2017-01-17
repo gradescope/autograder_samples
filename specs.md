@@ -20,7 +20,7 @@ Files you provide:
 - **/autograder/source** contains the contents of your autograder zip file.
 - **/autograder/results/results.json** is where you put the test output that is uploaded to Gradescope.
 
-Files gradescope provides:
+Files Gradescope provides:
 
 - **/autograder/submission** contains the student's submission, downloaded from Gradescope.
 - **/autograder/results/stdout** captures the output of run_autograder, for displaying back to the instructor for debugging purposes. Any output you wish to show to students must be explicitly put in the JSON "output" field.
