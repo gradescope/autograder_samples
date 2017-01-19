@@ -3,7 +3,7 @@
 ## Pre-requisites
 
 If you haven't made an account on Gradescope, sign up as an instructor at
-[https://gradescope.com/](Gradescope.com).
+[Gradescope.com](https://gradescope.com/).
 
 Currently, programming assignments are in beta, so you'll need to
 request access to the feature by emailing
