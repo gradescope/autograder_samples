@@ -13,17 +13,18 @@ contain at least two files in the root of the archive:
 
 ## File hierarchy
 
-All autograder related files will be in the /autograder directory.
+All autograder related files will be in the /autograder directory. This directory structure is set up when the autograder Docker image is built.
 
 Files you provide:
 
-- **/autograder/source** contains the contents of your autograder zip file.
-- **/autograder/results/results.json** is where you put the test output that is uploaded to Gradescope.
+- **/autograder/source** contains the extracted contents of your autograder zip file.
+- **/autograder/run_autograder** is where your autograder script gets copied to during the Docker image build process.
+- **/autograder/results/results.json** is where you put the test output that is uploaded to Gradescope. This must be produced as a result of executing `run_autograder`.
 
-Files Gradescope provides:
+Gradescope's autograder harness will create the following files:
 
 - **/autograder/submission** contains the student's submission, downloaded from Gradescope.
-- **/autograder/results/stdout** captures the output of run_autograder, for displaying back to the instructor for debugging purposes. Any output you wish to show to students must be explicitly put in the JSON "output" field.
+- **/autograder/results/stdout** captures the output of `run_autograder`, for displaying back to the instructor for debugging purposes. Any output you wish to show to students must be explicitly put in the JSON "output" field.
 
 ## Output format
 
