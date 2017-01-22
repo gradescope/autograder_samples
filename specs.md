@@ -70,12 +70,12 @@ If an assignment level visibility setting is set, a test can override this
 setting with its own visibility setting. For example, you may set
 `"visibility":"after_due_date"` at the top level so that all tests are hidden
 until after the submission deadline. Then, you can set an individual test to
-have `"visibility":"visible"` for a test that should always be shown. For
-example, this can be useful for pre-submission checks such as a test that checks
-whether the student's code compiled successfully or not. Another possibility is
-having a subset of tests always visible to guide students through the homework,
-while keeping the set of tests that they will be graded on hidden until after
-the assignment is due.
+have `"visibility":"visible"` if it should always be shown. For example, this
+can be useful for pre-submission checks such as a test that checks whether the
+student's code compiled successfully or not. Another possibility is having a
+subset of tests always visible to guide students through the homework, while
+keeping the set of tests that they will be graded on hidden until after the
+assignment is due.
 
 If test cases are hidden, students will not be able to see their total
 score. Test cases with visibility set to `hidden` don't affect this, since they
