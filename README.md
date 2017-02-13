@@ -11,6 +11,12 @@ script, along with whatever supporting code you need, and we manage
 accepting student submissions, running your autograder at scale, and
 distributing the results back to students and to you.
 
+## Public Beta
+
+The autograder platform is currently free in public beta. Once the feature is
+out of beta, it will no longer be free, but we won’t interrupt usage in the
+middle of the term.
+
 # How it works
 
 As an instructor, you create a new assignment on Gradescope, and
