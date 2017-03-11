@@ -1,4 +1,4 @@
-[![Documentation Status](https://readthedocs.org/projects/gradescope-autograders/badge/?version=latest)](http://gradescope-autograders.readthedocs.org/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/gradescope-autograders/badge/?version=latest)](https://gradescope-autograders.readthedocs.org/en/latest/?badge=latest)
 
 # Overview
 
@@ -21,12 +21,12 @@ middle of the term.
 
 As an instructor, you create a new assignment on Gradescope, and
 upload your autograder zip file following our
-[specifications](http://gradescope-autograders.readthedocs.io/en/latest/specs/). Your code produces output in the format we
+[specifications](https://gradescope-autograders.readthedocs.io/en/latest/specs/). Your code produces output in the format we
 request. Students submit to Gradescope and have their work evaluated
 on demand. They can submit as many times as they want. At the end of
 the process, you can download their code and their results.
 
-Follow our **[instructions](http://gradescope-autograders.readthedocs.io/en/latest/getting_started/)** to get started with
+Follow our **[instructions](https://gradescope-autograders.readthedocs.io/en/latest/getting_started/)** to get started with
 autograding.
 
 # Examples
