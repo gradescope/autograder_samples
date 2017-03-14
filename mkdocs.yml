@@ -8,6 +8,7 @@ pages:
 - 'Getting Started': getting_started.md
 - 'Autograder Specifications': specs.md
 - 'Technical Details': tech.md
+- 'Troubleshooting': troubleshooting.md
 - 'Examples':
     - 'Python': python/index.md
     - 'Java': java/index.md
