@@ -60,6 +60,9 @@ You can hide some or all test cases based on your desired conditions. Visibility
 can be controlled by setting the "visibility" field at the top level for an
 assignment, or for an individual test.
 
+Note: Instructors will always see all tests, so for now you'll have to create a
+student account to test visibility settings.
+
 Options for the visibility field are as follows:
 
 - `hidden`: test case will never be shown to students
