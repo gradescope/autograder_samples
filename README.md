@@ -11,7 +11,7 @@ script, along with whatever supporting code you need, and we manage
 accepting student submissions, running your autograder at scale, and
 distributing the results back to students and to you.
 
-[Try Gradescope, it's Free!](http://lp.gradescope.com/instructors)
+<a class="btn" href="http://lp.gradescope.com/instructors">Try Gradescope, it's Free!</a>9
 
 ## Public Beta
 
