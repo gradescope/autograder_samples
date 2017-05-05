@@ -11,6 +11,8 @@ script, along with whatever supporting code you need, and we manage
 accepting student submissions, running your autograder at scale, and
 distributing the results back to students and to you.
 
+[Try Gradescope, it's Free!](http://lp.gradescope.com/instructors)
+
 ## Public Beta
 
 The autograder platform is currently free in public beta. Once the feature is
