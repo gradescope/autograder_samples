@@ -13,11 +13,11 @@ information:
 ```
 {
   "id": 1, // Gradescope submission ID
-  "created_at": , // Submission time
+  "created_at": "2017-06-01T14:22:32.365935-07:00", // Submission time
   "assignment_id": 1, // Gradescope assignment ID
   "previous_submissions": [
     {
-      "submission_time": ,// previous submission time
+      "submission_time": "2017-04-06T14:24:48.087023-07:00",// previous submission time
       "score": 0.0, // Previous submission score
       "results": { ... } // Previous submission results object
     }, ...
@@ -33,12 +33,13 @@ within a 24 hour period, you can count the number of entries in
 `previous_submissions` which are within the last 24 hours, and display
 that information in the top level output field.
 
-If students should be rate limited, you should add a message and merge
-that with the results object from the previous submission. This way,
-students will keep their last valid score, but they'll know that they
-can't submit anymore.
+If a student's submission should be rate limited, you can add a
+message to the top level output, and merge that with the results
+object from the previous submission. This way, students will keep
+their last valid score, but they'll know that they can't submit
+anymore.
 
 When implementing such schemes, be sure to compute time periods based
 on the current submission's "created_at" (submission time) -
 otherwise, re-running the autograder will cause the rate limits to be
-computed based on the current time.
+computed based on the current system time.
