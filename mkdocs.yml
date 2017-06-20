@@ -9,6 +9,7 @@ pages:
 - 'Autograder Specifications': specs.md
 - 'Technical Details': tech.md
 - 'Troubleshooting': troubleshooting.md
+- 'Advanced Usage': advanced.md
 - 'Examples':
     - 'Python': python/index.md
     - 'Java': java/index.md
