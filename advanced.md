@@ -6,9 +6,9 @@ reserve the right to make breaking changes to anything described here.
 
 ## submission_metadata.json
 
-Within the `/autograder` directory, there is a file
-`submission_metadata.json`. This file contains information about the
-current and previous submissions. It contains the following information:
+The file `/autograder/submission_metadata.json` contains information
+about the current and previous submissions. It contains the following
+information:
 
 ```
 {
