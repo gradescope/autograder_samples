@@ -11,7 +11,7 @@ script, along with whatever supporting code you need, and we manage
 accepting student submissions, running your autograder at scale, and
 distributing the results back to students and to you.
 
-<a class="btn" href="https://lp.gradescope.com/instructors?utm_medium=autograder-post&utm_campaign=autograder&utm_source=ReadTheDocs">Try Gradescope, it's Free!</a>
+<a class="btn" href="https://lp.gradescope.com/instructors?utm_medium=autograder-post&utm_campaign=autograder-AdWds&utm_source=ReadTheDocs">Try Gradescope, it's Free!</a>
 
 ## Public Beta
 
