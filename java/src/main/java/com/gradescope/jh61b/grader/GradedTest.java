@@ -27,6 +27,7 @@ import java.lang.annotation.Target;
  * <li>name: String that specifies the name of the test.</li> 
  * <li>number: String that specifies the number of the test.</li> 
  * <li>points: Double that specifies the number of points that the test is worth.</li>
+ * <li>visibility: String that specifies the visibility condition for the test.</li>
  * </ul>
  */
 @Retention(RetentionPolicy.RUNTIME)
@@ -46,4 +47,5 @@ public @interface GradedTest {
     String name() default "Unnamed test";
     String number() default "";
     double max_score() default 1.0;
+    String visibility() default "";
 }
