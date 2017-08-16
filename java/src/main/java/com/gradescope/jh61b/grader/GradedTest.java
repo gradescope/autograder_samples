@@ -47,5 +47,5 @@ public @interface GradedTest {
     String name() default "Unnamed test";
     String number() default "";
     double max_score() default 1.0;
-    String visibility() default "";
+    String visibility() default "visible";
 }
