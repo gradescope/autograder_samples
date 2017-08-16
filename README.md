@@ -19,7 +19,10 @@ access to our "Gradescope Complete" tier (see our [pricing
 page](https://gradescope.com/pricing) for more information).
 
 If you're an existing user or have any questions regarding pricing,
-please contact us at [help@gradescope.com](mailto:help@gradescope.com)
+please contact us at
+[help@gradescope.com](mailto:help@gradescope.com). If you just want to
+experiment with the platform to see if it works for you, feel free to
+contact us and we'll give you access.
 
 # How it works
 
