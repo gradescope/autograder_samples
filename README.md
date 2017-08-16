@@ -13,11 +13,12 @@ distributing the results back to students and to you.
 
 ## Pricing
 
-Starting Fall 2017, the autograder platform will be a paid
-Gradescope feature as part of the "Gradescope Complete" tier (see our
-[pricing page](https://gradescope.com/pricing) for more information).
+Starting Fall 2017, the autograder platform will be available with
+paid school site licenses and for individual courses that pay for
+access to our "Gradescope Complete" tier (see our [pricing
+page](https://gradescope.com/pricing) for more information).
 
-If you're an existing user, or have any questions about this change,
+If you're an existing user or have any questions regarding pricing,
 please contact us at [help@gradescope.com](mailto:help@gradescope.com)
 
 # How it works
