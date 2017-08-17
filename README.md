@@ -11,19 +11,6 @@ script, along with whatever supporting code you need, and we manage
 accepting student submissions, running your autograder at scale, and
 distributing the results back to students and to you.
 
-## Pricing
-
-Starting Fall 2017, the autograder platform will be available with
-paid school site licenses and for individual courses that pay for
-access to our "Gradescope Complete" tier (see our [pricing
-page](https://gradescope.com/pricing) for more information).
-
-If you're an existing user or have any questions regarding pricing,
-please contact us at
-[help@gradescope.com](mailto:help@gradescope.com). If you want to
-experiment with the platform to see if it works for you, feel free to
-contact us for trial access.
-
 # How it works
 
 As an instructor, you create a new assignment on Gradescope, and
@@ -47,3 +34,16 @@ any further questions, feel free to contact us at
 - [Python](python/)
 - [Java (JUnit)](java/)
   - [Java+Maven](java-mvn/)
+
+# Pricing
+
+Starting Fall 2017, the autograder platform will be available with
+paid school site licenses and for individual courses that pay for
+access to our "Gradescope Complete" tier (see our [pricing
+page](https://gradescope.com/pricing) for more information).
+
+If you're an existing user or have any questions regarding pricing,
+please contact us at
+[help@gradescope.com](mailto:help@gradescope.com). If you want to
+experiment with the platform to see if it works for you, feel free to
+contact us for trial access.
