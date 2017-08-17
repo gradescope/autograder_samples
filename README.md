@@ -20,9 +20,9 @@ page](https://gradescope.com/pricing) for more information).
 
 If you're an existing user or have any questions regarding pricing,
 please contact us at
-[help@gradescope.com](mailto:help@gradescope.com). If you just want to
+[help@gradescope.com](mailto:help@gradescope.com). If you want to
 experiment with the platform to see if it works for you, feel free to
-contact us and we'll give you access.
+contact us for trial access.
 
 # How it works
 
