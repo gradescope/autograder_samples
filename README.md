@@ -11,11 +11,18 @@ script, along with whatever supporting code you need, and we manage
 accepting student submissions, running your autograder at scale, and
 distributing the results back to students and to you.
 
-## Public Beta
+## Pricing
 
-The autograder platform is currently free in public beta. Once the feature is
-out of beta, it will no longer be free, but we won’t interrupt usage in the
-middle of the term.
+Starting Fall 2017, the autograder platform will be available with
+paid school site licenses and for individual courses that pay for
+access to our "Gradescope Complete" tier (see our [pricing
+page](https://gradescope.com/pricing) for more information).
+
+If you're an existing user or have any questions regarding pricing,
+please contact us at
+[help@gradescope.com](mailto:help@gradescope.com). If you want to
+experiment with the platform to see if it works for you, feel free to
+contact us for trial access.
 
 # How it works
 
