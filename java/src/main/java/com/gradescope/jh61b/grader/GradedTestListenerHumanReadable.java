@@ -87,6 +87,10 @@ public class GradedTestListenerHumanReadable extends RunListener {
         return getAnnotationDouble(x, "max_score");        
     }
 
+    private static String getTestVisibility(GradedTest x) throws
+        IllegalAccessException, InvocationTargetException {
+        return getAnnotationString(x, "visibility");
+    }
 
     /** Returns the name of a test as stored in an annotation. 
       * TODO: Is there a more elegant way to do this? */
