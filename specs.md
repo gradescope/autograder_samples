@@ -47,6 +47,11 @@ Your autograder's output should be in the file results.json, in the following fo
             "visibility": "visible" // Optional visibility setting
         },
         // and more test cases...
+    ],
+  "leaderboard": // Optional, will set up leaderboards for these values
+    [
+      {"name": "Accuracy", "value": "92.6"},
+      {"name": "Time", "value": "15.1"},
     ]
 }
 ```
