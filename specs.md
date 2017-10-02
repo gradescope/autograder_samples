@@ -95,4 +95,4 @@ should only be used for tests which don't contribute points to the total.
 ### Leaderboards
 
 You can add a "leaderboard" section to create leaderboards for your
-assignment. You can [read more about leaderboards here](https://gradescope-autograders.readthedocs.io/en/latest/leaderboard/).
+assignment. You can [read more about leaderboards here](https://gradescope-autograders.readthedocs.io/en/latest/leaderboards/).
