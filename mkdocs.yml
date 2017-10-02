@@ -10,6 +10,7 @@ pages:
 - 'Technical Details': tech.md
 - 'Troubleshooting': troubleshooting.md
 - 'Advanced Usage': advanced.md
+- 'Leaderboards': leaderboard.md
 - 'Examples':
     - 'Python': python/index.md
     - 'Java': java/index.md
