@@ -51,7 +51,7 @@ Your autograder's output should be in the file results.json, in the following fo
   "leaderboard": // Optional, will set up leaderboards for these values
     [
       {"name": "Accuracy", "value": .926},
-      {"name": "Time", "value": 15.1},
+      {"name": "Time", "value": 15.1, "order": "asc"},
       {"name": "Stars", "value": "*****"}
     ]
 }
