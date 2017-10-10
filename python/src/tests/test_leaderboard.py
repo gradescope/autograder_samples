@@ -17,7 +17,7 @@ class TestLeaderboard(unittest.TestCase):
         """Sets a leaderboard value"""
         set_leaderboard_value("*" * randint(0, 10))
 
-    @leaderboard("another")
+    @leaderboard("time", "asc")
     def test_another(self, set_leaderboard_value=None):
-        """Sets a leaderboard value"""
+        """Sets a leaderboard value that's sorted ascending (lower is better)"""
         set_leaderboard_value(randint(0, 10))
