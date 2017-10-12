@@ -17,7 +17,7 @@ class TestLeaderboard(unittest.TestCase):
     @leaderboard("accuracy")
     def test_leaderboard_float(self, set_leaderboard_value=None):
         """Sets a leaderboard value"""
-        set_leaderboard_value(random.uniform(50, 100))
+        set_leaderboard_value(round(random.uniform(50, 100), 2))
 
     @leaderboard("stars")
     def test_string(self, set_leaderboard_value=None):
@@ -27,4 +27,4 @@ class TestLeaderboard(unittest.TestCase):
     @leaderboard("time", "asc")
     def test_another(self, set_leaderboard_value=None):
         """Sets a leaderboard value that's sorted ascending (lower is better)"""
-        set_leaderboard_value(random.gauss(7, 3))
+        set_leaderboard_value(round(random.gauss(7, 3), 2))
