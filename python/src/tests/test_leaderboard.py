@@ -1,5 +1,7 @@
+# -*- coding: utf-8 -*-
+
 import unittest
-from random import randint
+import random
 from gradescope_utils.autograder_utils.decorators import leaderboard
 
 
@@ -10,14 +12,19 @@ class TestLeaderboard(unittest.TestCase):
     @leaderboard("high_score")
     def test_leaderboard(self, set_leaderboard_value=None):
         """Sets a leaderboard value"""
-        set_leaderboard_value(randint(0, 10))
+        set_leaderboard_value(random.randint(0, 10))
+
+    @leaderboard("accuracy")
+    def test_leaderboard_float(self, set_leaderboard_value=None):
+        """Sets a leaderboard value"""
+        set_leaderboard_value(random.uniform(50, 100))
 
     @leaderboard("stars")
     def test_string(self, set_leaderboard_value=None):
         """Sets a leaderboard value"""
-        set_leaderboard_value("*" * randint(0, 10))
+        set_leaderboard_value("🌟" * random.randint(0, 10))
 
     @leaderboard("time", "asc")
     def test_another(self, set_leaderboard_value=None):
         """Sets a leaderboard value that's sorted ascending (lower is better)"""
-        set_leaderboard_value(randint(0, 10))
+        set_leaderboard_value(random.gauss(7, 3))
