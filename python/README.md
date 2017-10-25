@@ -57,7 +57,7 @@ JSONTestRunner().run(suite)
 ## [setup.sh](src/setup.sh)
 
 This script installs Python and the pip package manager. Then it uses
-pip two install our two external dependencies.
+pip to install our two external dependencies.
 
 ## [run_autograder](src/run_autograder)
 
