@@ -21,7 +21,10 @@ a simple language.
 - Python 2.7+/3+
 - gradescope-utils provides annotations for setting point values for tests, and running tests with a JSON output.
 - subprocess32 is a convenient backport of Python 3.2's subprocess module. Used in one of the tests to communicate with an instance of the REPL to verify that it responds to input correctly.
-- **Python 3 Users:** Make sure to use `pip3` and `python3` when writing your code, because our autograder base image does include Python 2 as well, which are currently the defaults for `pip` and `python`.
+
+### Python 3
+
+Make sure to use `pip3` and `python3` when writing your code, because our autograder base image does include Python 2 as well, which are currently the defaults for `pip` and `python`.
 
 ## Example Test
 
