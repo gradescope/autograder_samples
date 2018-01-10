@@ -14,4 +14,4 @@ ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
 # Clone autograder files
 git clone git@github.com:gradescope/autograder_samples /autograder/autograder_samples
 # Install python dependencies
-pip install -r $BASE_DIR/requirements.txt
+pip install -r /autograder/autograder_samples/python/src/requirements.txt
