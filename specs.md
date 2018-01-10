@@ -15,6 +15,8 @@ contain at least two files in the root of the archive:
 
 All autograder related files will be in the /autograder directory. This directory structure is set up when the autograder Docker image is built.
 
+When the autograder executes, the working directory is **/autograder**.
+
 Files you provide:
 
 - **/autograder/source** contains the extracted contents of your autograder zip file.
