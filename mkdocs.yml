@@ -9,8 +9,9 @@ pages:
 - 'Autograder Specifications': specs.md
 - 'Technical Details': tech.md
 - 'Troubleshooting': troubleshooting.md
-- 'Advanced Usage': advanced.md
-- 'Manual Docker Configuration': manual_docker.md
+- 'Advanced Usage':
+  - 'Submission Metadata': submission_metadata.md
+  - 'Manual Docker Configuration': manual_docker.md
 - 'Leaderboards': leaderboards.md
 - 'Examples':
     - 'Python': python/index.md
