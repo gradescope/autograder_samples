@@ -14,3 +14,9 @@ script.
 
 Beyond this, there are no other requirements on the structure of your Docker
 image, so you can organize it as you wish.
+
+## Private Docker Hub Repositories
+
+If your Docker Hub repository is private, you'll need to give the user
+`gradescopeecs` access to your repository. You may want to do this to
+make sure that students cannot download your autograder image.
