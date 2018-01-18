@@ -24,7 +24,7 @@ a simple language.
 
 ### Python 3
 
-Make sure to use `pip3` and `python3` when writing your code, because our autograder base image does include Python 2 as well, which are currently the defaults for `pip` and `python`.
+Make sure to use `pip3` and `python3` when writing your code, because our autograder base image does include Python 2 as well, which are currently the defaults for `pip` and `python`. When installing Python 3, use the apt packages `python3` and `python3-pip`. If you need a more recent version than what is packaged by Ubuntu 16.04, you can try using a PPA or installing from source.
 
 ## Example Test
 
