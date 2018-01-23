@@ -36,7 +36,8 @@ Your autograder's output should be in the file results.json, in the following fo
 { "score": 44.0, // optional, but required if not on each test case below
   "execution_time": 136, // optional, seconds
   "output": "Text relevant to the entire submission", // optional
-  "visibility": "after_due_date" // Optional visibility setting
+  "visibility": "after_due_date", // Optional visibility setting
+  "stdout_visibility": "visible" // Optional stdout visibility setting
   "tests": // Optional, but required if no top-level score
     [
         {
@@ -45,7 +46,7 @@ Your autograder's output should be in the file results.json, in the following fo
             "name": "Your name here", // optional
             "number": "1.1", // optional (will just be numbered in order of array if no number given)
             "output": "Giant multiline string that will be placed in a <pre> tag and collapsed by default", // optional
-            "tags": ["tag1", "tag2", "tag3"] // optional
+            "tags": ["tag1", "tag2", "tag3"], // optional
             "visibility": "visible" // Optional visibility setting
         },
         // and more test cases...
@@ -93,6 +94,15 @@ If test cases are hidden, students will not be able to see their total
 score. Test cases with visibility set to `hidden` don't affect this, since they
 should only be used for tests which don't contribute points to the total.
 
+### Controlling standard output visibility
+
+By default, anything printed to standard output is recorded and only shown to
+instructors, for debugging purposes. If you know that nothing sensitive or
+revealing is printed to standard output, you can make that content visible to
+students by adding a top-level `"stdout_visibility"` key to your JSON. The value
+should be one of `hidden`, `after_due_date`, `after_published`, or `visible`,
+depending on when you want stdout to be visible to students. These options
+mirror the test case visibility options described above.
 
 ### Leaderboards
 
