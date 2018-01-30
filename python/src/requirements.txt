@@ -1,2 +1,2 @@
-gradescope-utils>=0.2.4
+gradescope-utils>=0.2.6
 subprocess32
