@@ -1,5 +1,5 @@
 import unittest
-from gradescope_utils.autograder_utils.decorators import weight
+from gradescope_utils.autograder_utils.decorators import weight, visibility
 from calculator import Calculator
 
 
@@ -8,12 +8,14 @@ class TestComplex(unittest.TestCase):
         self.calc = Calculator()
 
     @weight(2)
+    @visibility('after_due_date')
     def test_eval_parens(self):
         """Evaluate (1 + 1) * 4"""
         val = self.calc.eval("(1 + 1) * 4")
         self.assertEqual(val, 8)
 
     @weight(2)
+    @visibility('after_due_date')
     def test_eval_precedence(self):
         """Evaluate 1 + 1 * 8"""
         val = self.calc.eval("1 + 1 * 8")
