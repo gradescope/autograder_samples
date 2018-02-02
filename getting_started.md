@@ -21,7 +21,7 @@ Programming Assignment" in the bottom bar.
 You'll be asked for some basic details about your assignment. Choose
 the appropriate options and continue.
 
-[![Assignment](assignment_details.png)](assignment_details.png)
+[![Assignment](assignment_form.png)](assignment_form.png)
 
 Next you'll be asked to upload your autograder. Upload a zip file
 meeting the required [specifications](specs), and press "Update
