@@ -5,9 +5,9 @@
 If you haven't made an account on Gradescope, sign up as an instructor at
 [Gradescope.com](https://gradescope.com/).
 
-Currently, programming assignments are in beta, so you'll need to
-request access to the feature by emailing
-[help@gradescope.com](mailto:help@gradescope.com).
+Programming assignments are part of Gradescope Complete, so you'll
+need to either upgrade your course, or request trial access to the
+feature by emailing [help@gradescope.com](mailto:help@gradescope.com).
 
 You'll need to have a course set up, so create one if you don't have one.
 

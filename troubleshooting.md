@@ -7,8 +7,10 @@
 If you see the word 'Killed' at the end of your autograder run, and it gets
 terminated abruptly, this likely means that your autograder was terminated due
 to exceeding the default memory limit for a single container. Our default memory
-limit is 384MB, but we can increase this for you if you find that it's
-necessary. Let us know if this is the case, and we'll take care of that for you.
+limit is 384MB, but you can increase this from the "Advanced Settings" section
+of the settings for your assignment.
+
+[![Advanced Settings](advanced_settings.png)](advanced_settings.png)
 
 ### Your submission timed out
 
@@ -26,8 +28,8 @@ you should adjust your running time expectations accordingly. The easiest way to
 do this is to simply time how long your solution code takes to run.
 
 If you need a longer timeout, let us know and we may potentially increase the
-global timeout for your assignment. We can also increase the CPU allocation if
-it's a CPU-intensive assignment.
+global timeout for your assignment. You can also increase the CPU allocation if
+it's a CPU-intensive assignment, under "Advanced Settings".
 
 ### The autograder failed to execute correctly
 
