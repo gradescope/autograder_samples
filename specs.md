@@ -37,7 +37,8 @@ Your autograder's output should be in the file results.json, in the following fo
   "execution_time": 136, // optional, seconds
   "output": "Text relevant to the entire submission", // optional
   "visibility": "after_due_date", // Optional visibility setting
-  "stdout_visibility": "visible" // Optional stdout visibility setting
+  "stdout_visibility": "visible", // Optional stdout visibility setting
+  "extra_data": {}, // Optional extra data to be stored
   "tests": // Optional, but required if no top-level score
     [
         {
@@ -47,7 +48,8 @@ Your autograder's output should be in the file results.json, in the following fo
             "number": "1.1", // optional (will just be numbered in order of array if no number given)
             "output": "Giant multiline string that will be placed in a <pre> tag and collapsed by default", // optional
             "tags": ["tag1", "tag2", "tag3"], // optional
-            "visibility": "visible" // Optional visibility setting
+            "visibility": "visible", // Optional visibility setting
+            "extra_data": {} // Optional extra data to be stored
         },
         // and more test cases...
     ],
