@@ -93,6 +93,11 @@ public class GradedTestListenerJSON extends RunListener {
         return getAnnotationDouble(x, "max_score");        
     }
 
+    private static String getTestVisibility(GradedTest x) throws
+        IllegalAccessException, InvocationTargetException {
+        return getAnnotationString(x, "visibility");
+    }
+
 
     /** Returns the name of a test as stored in an annotation. 
       * TODO: Is there a more elegant way to do this? */
@@ -136,9 +141,10 @@ public class GradedTestListenerJSON extends RunListener {
         String testName = getTestName(gradedTestAnnotation);
         String testNumber = getTestNumber(gradedTestAnnotation);
         double testMaxScore = getTestMaxScore(gradedTestAnnotation);
+        String visibility = getTestVisibility(gradedTestAnnotation);
 
         /* Capture StdOut (both ours and theirs) so that we can relay it to the students. */
-        currentTestResult = new TestResult(testName, testNumber, testMaxScore);
+        currentTestResult = new TestResult(testName, testNumber, testMaxScore, visibility);
 
         /* By default every test passes. */
         currentTestResult.setScore(testMaxScore);

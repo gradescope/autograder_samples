@@ -13,12 +13,6 @@ distributing the results back to students and to you.
 
 <a class="btn" href="https://lp.gradescope.com/instructors?utm_medium=autograder-post&utm_campaign=autograder-FB&utm_source=ReadTheDocs">Try Gradescope, it's Free!</a>
 
-## Public Beta
-
-The autograder platform is currently free in public beta. Once the feature is
-out of beta, it will no longer be free, but we won’t interrupt usage in the
-middle of the term.
-
 # How it works
 
 As an instructor, you create a new assignment on Gradescope, and
@@ -42,3 +36,16 @@ any further questions, feel free to contact us at
 - [Python](python/)
 - [Java (JUnit)](java/)
   - [Java+Maven](java-mvn/)
+
+# Pricing
+
+Starting Fall 2017, the autograder platform will be available with
+paid school site licenses and for individual courses that pay for
+access to our "Gradescope Complete" tier (see our [pricing
+page](https://gradescope.com/pricing) for more information).
+
+If you're an existing user or have any questions regarding pricing,
+please contact us at
+[help@gradescope.com](mailto:help@gradescope.com). If you want to
+experiment with the platform to see if it works for you, feel free to
+contact us for trial access.
