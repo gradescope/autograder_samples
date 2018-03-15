@@ -9,7 +9,11 @@ pages:
 - 'Autograder Specifications': specs.md
 - 'Technical Details': tech.md
 - 'Troubleshooting': troubleshooting.md
-- 'Advanced Usage': advanced.md
+- 'Advanced Usage':
+  - 'Submission Metadata': submission_metadata.md
+  - 'Manual Docker Configuration': manual_docker.md
+  - 'Pulling Autograder from Git': git_pull.md
+- 'Leaderboards': leaderboards.md
 - 'Examples':
     - 'Python': python/index.md
     - 'Java': java/index.md

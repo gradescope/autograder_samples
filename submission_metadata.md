@@ -1,10 +1,8 @@
-# Advanced Usage
+# Submission Metadata
 
 Note: The content mentioned here may be subject to change. We will try
 not to make backwards incompatible changes to the platform, but we do
 reserve the right to make breaking changes to anything described here.
-
-## submission_metadata.json
 
 The file `/autograder/submission_metadata.json` contains information
 about the current and previous submissions. It contains the following
@@ -25,7 +23,7 @@ information:
 }
 ```
 
-### Rate limiting schemes
+## Rate limiting schemes
 
 You can use submission_metadata.json to implement arbitrary rate
 limiting schemes. For instance, to limit the number of submissions

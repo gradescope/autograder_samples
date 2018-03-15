@@ -4,22 +4,22 @@ package com.gradescope.jh61b.grader;
 public class TestResult {
 	final String name;
 	final String number;
-	final double maxScore; 
+	final double maxScore;
 	double score;
-	
+	final String visibility;
+
 	/* outputSB is any text that we want to relay to the user when teh test is done running. */
 	private StringBuilder outputSB;
-	
 
 	/* private List<String> tags; // Not yet implemented */
-	/* private String visibility; Can be always, published, or never. Not yet implemented. */
 
 
-	public TestResult(String name, String number, double maxScore) {
+	public TestResult(String name, String number, double maxScore, String visibility) {
 		this.name = name;
 		this.number = number;
 		this.maxScore = maxScore;
 		this.outputSB = new StringBuilder();
+		this.visibility = visibility;
 	}
 
 	public void setScore(double score) {
@@ -44,6 +44,7 @@ public class TestResult {
 			String.format("\"%s\": \"%s\"", "number", number),
 			String.format("\"%s\": %s", "score", score),
 			String.format("\"%s\": %s", "max_score", maxScore),
+			String.format("\"%s\": \"%s\"", "visibility", visibility),
 			String.format("\"%s\": \"%s\"", "output", noQuotes)
 		}) + "}";
 	}

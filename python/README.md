@@ -19,8 +19,12 @@ a simple language.
 ## Dependencies (for tests)
 
 - Python 2.7+/3+
-- gradescope-utils provides annotations for setting point values for tests, and running tests with a JSON output.
+- [gradescope-utils](https://github.com/gradescope/gradescope-utils) provides decorators for setting point values for tests, and running tests with a JSON output. [See the Github repository](https://github.com/gradescope/gradescope-utils) for more on what you can do with it, or you can look at the example tests in this project for some usage examples.
 - subprocess32 is a convenient backport of Python 3.2's subprocess module. Used in one of the tests to communicate with an instance of the REPL to verify that it responds to input correctly.
+
+### Python 3
+
+Make sure to use `pip3` and `python3` when writing your code, because our autograder base image does include Python 2 as well, which are currently the defaults for `pip` and `python`. When installing Python 3, use the apt packages `python3` and `python3-pip`. If you need a more recent version than what is packaged by Ubuntu 16.04, you can try using a PPA or installing from source.
 
 ## Example Test
 
@@ -56,7 +60,7 @@ JSONTestRunner().run(suite)
 ## [setup.sh](src/setup.sh)
 
 This script installs Python and the pip package manager. Then it uses
-pip two install our two external dependencies.
+pip to install our two external dependencies.
 
 ## [run_autograder](src/run_autograder)
 
