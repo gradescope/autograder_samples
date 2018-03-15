@@ -2,4 +2,4 @@
 
 apt-get install -y python python-pip python-dev
 
-pip install subprocess32 gradescope-utils
+pip install -r /autograder/source/requirements.txt

@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+BASE_DIR=/autograder/autograder_samples/python/src
+
+# Update autograder files
+cd /autograder/autograder_samples
+git pull
+
+cp /autograder/submission/calculator.py $BASE_DIR/calculator.py
+
+pip install -r $BASE_DIR/requirements.txt
+
+cd $BASE_DIR
+
+python run_tests.py > /autograder/results/results.json

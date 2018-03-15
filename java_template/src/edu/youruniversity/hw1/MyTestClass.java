@@ -15,5 +15,13 @@ public class MyTestClass {
         System.out.println("Tested 1+1, got " + x);
         assertEquals(x, 2);
     }
+
+    @Test
+    @GradedTest(name="Test 1+1*2", max_score=1, visibility="after_published")
+    public void test_1p1t2() {
+        int x = 1 + 1 * 2;
+        System.out.println("Tested 1+1*2, got " + x);
+        assertEquals(x, 3);
+    }
     // Add more tests...
 }

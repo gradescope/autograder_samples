@@ -5,9 +5,9 @@
 If you haven't made an account on Gradescope, sign up as an instructor at
 [Gradescope.com](https://gradescope.com/).
 
-Currently, programming assignments are in beta, so you'll need to
-request access to the feature by emailing
-[help@gradescope.com](mailto:help@gradescope.com).
+Programming assignments are part of [Gradescope Complete](https://gradescope.com/pricing),
+so you'll need to either upgrade your course, or request trial access to the feature by
+emailing [help@gradescope.com](mailto:help@gradescope.com).
 
 You'll need to have a course set up, so create one if you don't have one.
 
@@ -21,7 +21,7 @@ Programming Assignment" in the bottom bar.
 You'll be asked for some basic details about your assignment. Choose
 the appropriate options and continue.
 
-[![Assignment](assignment_details.png)](assignment_details.png)
+[![Assignment](assignment_form.png)](assignment_form.png)
 
 Next you'll be asked to upload your autograder. Upload a zip file
 meeting the required [specifications](specs), and press "Update
