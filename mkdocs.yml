@@ -8,6 +8,7 @@ pages:
 - 'Getting Started': getting_started.md
 - 'Autograder Specifications': specs.md
 - 'Technical Details': tech.md
+- 'Debugging via SSH': ssh.md
 - 'Troubleshooting': troubleshooting.md
 - 'Advanced Usage':
   - 'Submission Metadata': submission_metadata.md
