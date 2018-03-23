@@ -8,6 +8,17 @@ class TestDiff(unittest.TestCase):
         pass
 
     @weight(1)
+    def test_no_args(self):
+        """Invalid Input (no argument)"""
+        fib = subprocess.Popen(["./fib"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        output = fib.stdout.read().strip()
+        self.assertEqual(output, "")
+        err = fib.stderr.read().strip()
+        referenceOutput = "Error: Insufficient arguments."
+        self.assertEqual(err, referenceOutput)
+        fib.terminate()
+
+    @weight(1)
     def test_fib0(self):
         """Invalid Input (0)"""
         fib = subprocess.Popen(["./fib", "0"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)

@@ -10,7 +10,7 @@ int fib(int n) {
 
 int main(int argc, char** argv) {
     if (argc < 2) {
-        fprintf(stderr, "Insufficient arguments.\n");
+        fprintf(stderr, "Error: Insufficient arguments.\n");
         return -1;
     }
     int arg = atoi(argv[1]);
