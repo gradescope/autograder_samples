@@ -17,7 +17,7 @@ that one first.
 
 ## The program
 
-The C program in question (`[fib.c](https://github.com/gradescope/autograder_samples/blob/master/diff/fib.c)`) computes the nth Fibonacci number
+The C program in question ([`fib.c`](https://github.com/gradescope/autograder_samples/blob/master/diff/fib.c)) computes the nth Fibonacci number
 (1-indexed), as specified as the first command line argument
 (i.e. `argv[1]`). This is just a simple example to demonstrate how you
 might structure such an autograder.
