@@ -18,3 +18,4 @@ pages:
     - 'Python': python/index.md
     - 'Java': java/index.md
     - 'Java+Maven': java-mvn/index.md
+    - 'Native code via Python': diff/index.md
