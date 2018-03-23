@@ -24,19 +24,18 @@ might structure such an autograder.
 
 ## Compiling the C code
 
-I chose a very simple example of a one-file C program, which can be
-compiled by running `make fib`. In general, you will need to compile
-the code within `run_autograder` before starting the Python
-script. This can be as complicated as you need it to be - you can
-actually write a Makefile or use whatever other build system you need
-to use.
+For this simple example of a one-file C program, it can be compiled by
+running `make fib`. In general, you will need to compile the code
+within `run_autograder` before starting the Python script. This can be
+as complicated as you need it to be - you can actually write a
+Makefile or use whatever other build system you need to use.
 
 ## Providing input to the program
 
-I just used command line arguments because that was the easiest thing
-to do, but you can also use write to the subprocess's standard
+This example uses command line arguments because that was the easiest thing
+to do, but you can also write to the subprocess's standard
 input. You can see the [Python integration test](https://github.com/gradescope/autograder_samples/blob/master/python/src/tests/test_integration.py)
-for an example of that.
+for an example of how to do that.
 
 ## Comparing to the reference answers
 
