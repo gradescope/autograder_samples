@@ -21,6 +21,14 @@ for how to generate one. If copying from a terminal, make sure that
 you don't include any line breaks, because there should not be any
 line breaks in a public key.
 
+### Account setttings
+
+Once you have added one SSH key, you can add more keys or change
+existing keys by going to the
+[Account settings](https://gradescope.com/account/edit) page.
+
+Your public keys will appear at the bottom of the page.
+
 ## Logging in via SSH
 
 Once you've set up your public key, clicking on the button will start
