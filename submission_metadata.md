@@ -10,9 +10,15 @@ information:
 
 ```
 {
-  "id": 1, // Gradescope submission ID
   "created_at": "2017-06-01T14:22:32.365935-07:00", // Submission time
   "assignment_id": 1, // Gradescope assignment ID
+  "users": [
+    {
+      "email": "student@example.com",
+      "id": 1234,
+      "name": "Student User"
+    }, ... // Multiple users will be listed in the case of group submissions
+  ],
   "previous_submissions": [
     {
       "submission_time": "2017-04-06T14:24:48.087023-07:00",// previous submission time
