@@ -16,7 +16,7 @@ pages:
   - 'Pulling Autograder from Git': git_pull.md
 - 'Leaderboards': leaderboards.md
 - 'Examples':
-    - 'Python': ../python/index.md
-    - 'Java': ../java/index.md
-    - 'Java+Maven': ../java-mvn/index.md
-    - 'Native code via Python': ../diff/index.md
+    - 'Python': python.md
+    - 'Java': java.md
+    - 'Java+Maven': java-mvn.md
+    - 'Native code via Python': diff.md
