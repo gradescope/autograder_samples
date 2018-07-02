@@ -1,6 +1,6 @@
 site_name: Gradescope Autograder Documentation
 repo_url: https://github.com/gradescope/autograder_samples
-docs_dir: .
+docs_dir: docs
 theme: readthedocs
 extra_css: [gradescope.css]
 pages:
