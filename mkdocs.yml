@@ -7,6 +7,7 @@ pages:
 - 'Home': index.md
 - 'Getting Started': getting_started.md
 - 'Autograder Specifications': specs.md
+- 'Manual Grading': manual_grading.md
 - 'Technical Details': tech.md
 - 'Debugging via SSH': ssh.md
 - 'Troubleshooting': troubleshooting.md
