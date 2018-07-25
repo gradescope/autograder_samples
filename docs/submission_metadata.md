@@ -10,8 +10,17 @@ information:
 
 ```
 {
-  "created_at": "2017-06-01T14:22:32.365935-07:00", // Submission time
-  "assignment_id": 1, // Gradescope assignment ID
+  "created_at": "2018-07-01T14:22:32.365935-07:00", // Submission time
+  "assignment": { // Assignment details
+    "due_date": "2018-07-31T23:00:00.000000-07:00",
+    "group_size": 4, // Maximum group size, or null if not set
+    "group_submission": true, // Whether group submission is allowed
+    "id": 25828, // Gradescope assignment ID
+    "late_due_date": null, // Late due date, if set
+    "release_date": "2018-07-02T00:00:00.000000-07:00",
+    "title": "Programming Assignment 1",
+    "total_points": "20.0" // Total point value, including any manual grading portion
+  },
   "users": [
     {
       "email": "student@example.com",
