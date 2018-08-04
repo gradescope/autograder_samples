@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "22588f4488903cd251733485635e5980683799a1b2b443f2b4900d3012c26d5a"
+            "sha256": "42480ce066b3420d71ef573f7113295ab8a90d2b16b05b781421d95559e81a24"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -18,11 +18,11 @@
     "default": {
         "gradescope-utils": {
             "hashes": [
-                "sha256:5e9986e041f32bced5fc84c2b5d8a8d7dbdb15460228d908443e4a503c9744d3",
-                "sha256:7330dbd6466f4314224d4dea84a682f7672b9938d2a0136b602299689ff6f18d"
+                "sha256:2154cc2a3a8e40e460db5953687ee6d9d6d63caf5e8c42a6f4d393ca54ab67d4",
+                "sha256:bfcfac66659567470c045ff44910c709521d0a3fb29ca26c9527247e6ae13b0c"
             ],
             "index": "pypi",
-            "version": "==0.2.6"
+            "version": "==0.2.7"
         },
         "subprocess32": {
             "hashes": [

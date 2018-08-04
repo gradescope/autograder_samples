@@ -6,7 +6,7 @@ name = "pypi"
 [dev-packages]
 
 [packages]
-gradescope-utils = ">=0.2.6"
+gradescope-utils = ">=0.2.7"
 "subprocess32" = "*"
 
 [requires]
