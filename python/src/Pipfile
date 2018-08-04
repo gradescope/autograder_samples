@@ -1,0 +1,13 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+
+[packages]
+gradescope-utils = ">=0.2.6"
+"subprocess32" = "*"
+
+[requires]
+python_version = "2.7"
