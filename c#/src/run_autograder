@@ -1,0 +1,7 @@
+#! /bin/bash
+
+cd /autograder/source
+cp /autograder/submission/HelloWorld.cs .
+mcs -target:library -pkg:nunit -out:test.dll test.cs HelloWorld.cs
+nunit-console test.dll -nodots -labels &> stdout_and_stderr
+python3 nunit_to_gs.py > /autograder/results/results.json
