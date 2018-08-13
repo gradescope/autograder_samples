@@ -3,7 +3,7 @@
 cd /autograder/source
 
 # Make sure student has the right package name in their file
-cp /autograder/submission/IntList.java /autograder/source/src/main/java/com/gradescope/autograder_test/
+cp /autograder/submission/IntList.java /autograder/source/src/main/java/com/gradescope/intlist/
 
 mvn -q compile
 mvn -q exec:java > /autograder/results/results.json
