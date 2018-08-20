@@ -11,3 +11,8 @@ manually using a rubric, as with other assignments on Gradescope. You can also
 leave comments on lines of code.
 
 [![Manual code grading UI](manual_grading_view.png)](manual_grading_view.png)
+
+If you would like to have more than one manually graded question, you can create
+more questions via the "Edit Outline" step.
+
+[![Assignment outline](assignment_outline.png)](assignment_outline.png)
