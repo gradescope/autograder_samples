@@ -1,6 +1,6 @@
 # Gradescope c# Autograder Example
 
-[View project source on Github](https://github.com/gradescope/autograder_samples/tree/master/c#/src) - [autograder.zip](https://github.com/gradescope/autograder_samples/raw/master/c#/src/autograder.zip) - [sample solution](https://github.com/gradescope/autograder_samples/raw/master/python/src/solution/calculator.py)
+[View project source on Github](https://github.com/gradescope/autograder_samples/tree/master/c#/src) - [autograder.zip](https://github.com/gradescope/autograder_samples/raw/master/c#/src/autograder.zip) - [sample solution](https://github.com/gradescope/autograder_samples/blob/master/c%23/src/solution/HelloWorld.cs)
 
 ## Project Description
 
