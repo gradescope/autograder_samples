@@ -42,31 +42,31 @@ nunit-console test.dll
 
 # Files
 
-## [setup.sh](src/setup.sh)
+## [setup.sh](https://github.com/gradescope/autograder_samples/blob/master/c%23/src/setup.sh)
 
 This script installs NUnit and the Mono development tools.
 
-## [run_autograder](src/run_autograder)
+## [run_autograder](https://github.com/gradescope/autograder_samples/blob/master/c%23/src/run_autograder)
 
 This script copies the student's submission to the target directory,
 compiles the required files (the test case and the student's submission),
 executes the test suite, and then converts the XML test results to Gradescope's
 JSON format.
 
-## [nunit_to_gs.py](src/nunit_to_gs.py)
+## [nunit_to_gs.py](https://github.com/gradescope/autograder_samples/blob/master/c%23/src/nunit_to_gs.py)
 
 This python script loads the test results from TestResults.xml
 and converts them into Gradescope's JSON format. This script is what
 reads the property tags that you supplied in the test case, as shown above,
 and turns those into the appropriate Gradescope metadata.
 
-## [Framework.cs](src/Framework.cs)
+## [Framework.cs](https://github.com/gradescope/autograder_samples/blob/master/c%23/src/Framework.cs)
 
 This is a blank template file for the students to fill in. Note that
 their solution must be called HelloWorld.cs for the autograder to work
 correctly.
 
-## [autograder.zip](src/autograder.zip)
+## [autograder.zip](https://github.com/gradescope/autograder_samples/blob/master/c%23/src/autograder.zip)
 
 This is a zipped up autograder that can be directly uploaded to Gradescope.
 You can then try out the correct and/or incorrect solutions we provide to see how
