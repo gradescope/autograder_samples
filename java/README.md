@@ -19,14 +19,14 @@ values.
 
 # Files
 
-## [setup.sh](setup.sh)
+## [setup.sh](https://github.com/gradescope/autograder_samples/blob/master/java/setup.sh)
 
 Sets up OpenJDK 8.
 
 Note: Installing JDK8 takes a few minutes, so building the image takes
 a while. We may later provide base images to speed this up.
 
-## [run_autograder](run_autograder)
+## [run_autograder](https://github.com/gradescope/autograder_samples/blob/master/java/run_autograder)
 
 Copies the student's code to the autograder directory, compiles, and
 executes it.
@@ -48,20 +48,20 @@ structure, which Gradescope will in the future make easier to verify.
 
 This script calls compile.sh and run.sh to compile and run code.
 
-### [compile.sh](compile.sh)
+### [compile.sh](https://github.com/gradescope/autograder_samples/blob/master/java/compile.sh)
 
 This script finds all source files under the *src* directory and
 compiles them. It adds the junit and hamcrest jars in the lib
 directory to the classpath (hamcrest is a dependency of JUnit). It
 produces output in the *classes* directory.
 
-### [run.sh](run.sh)
+### [run.sh](https://github.com/gradescope/autograder_samples/blob/master/java/run.sh)
 
 This script just runs the IntListTest class. It adds the compiled
 classes and bundled libraries to the classpath.
 
 
-## [AbstractIntList.java](src/main/java/com/gradescope/intlist/AbstractIntList.java)
+## [AbstractIntList.java](https://github.com/gradescope/autograder_samples/blob/master/java/src/main/java/com/gradescope/intlist/AbstractIntList.java)
 
 This is the abstract base class for the students' IntList
 implementation. It's essentially a linked list for ints, with a few
@@ -69,7 +69,7 @@ operations you can do on it.  It has a constructor and .equals()
 method implemented, so that you can rely on those things being
 consistent in your tests.
 
-## [RefIntList.java](src/main/java/com/gradescope/intlist/RefIntList.java)
+## [RefIntList.java](https://github.com/gradescope/autograder_samples/blob/master/java/src/main/java/com/gradescope/intlist/RefIntList.java)
 
 This is a "reference implementation" of the IntList class. One
 possible approach to writing tests is to have your reference
@@ -80,7 +80,7 @@ tests, you should use your reference implementation to set up the test
 data structures and then call the student's code. For Java, this may
 require setting up a copy constructor in your students' class.
 
-## [IntList.java](src/main/java/com/gradescope/intlist/IntList.java)
+## [IntList.java](https://github.com/gradescope/autograder_samples/blob/master/java/src/main/java/com/gradescope/intlist/IntList.java)
 
 This is the template file that you would give to students to fill
 in. It has some parts filled in that should be kept by students; in
@@ -91,23 +91,23 @@ individual functions in isolation instead of relying on students to
 implement basic functionality correctly. Due to the way Java works
 this can't be done in the abstract parent class.
 
-## [IntList.java solution](solution/IntList.java)
+## [IntList.java solution](https://github.com/gradescope/autograder_samples/blob/master/java/solution/IntList.java)
 
 This is an example solution. It's just the reference implementation
 with the name changed. You can submit this to Gradescope to see how it
 works.
 
-## [IntListTest.java](src/main/java/com/gradescope/intlist/tests/IntListTest.java)
+## [IntListTest.java](https://github.com/gradescope/autograder_samples/blob/master/java/src/main/java/com/gradescope/intlist/tests/IntListTest.java)
 
 This is the actual Test class. It imports the necessary parts of
 jh61b, JUnit, and the student's code. Then, it runs a set of basic
 tests on the student's code.
 
-## [IntListPredicates.java](src/main/java/com/gradescope/intlist/tests/IntListPredicates.java)
+## [IntListPredicates.java](https://github.com/gradescope/autograder_samples/blob/master/java/src/main/java/com/gradescope/intlist/tests/IntListPredicates.java)
 
 This is another Test class, just to demonstrate multi-class test suites.
 
-## [RunTests.java](src/main/java/com/gradescope/intlist/tests/RunTests.java)
+## [RunTests.java](https://github.com/gradescope/autograder_samples/blob/master/java/src/main/java/com/gradescope/intlist/tests/RunTests.java)
 
 This class actually runs the tests. This demonstrates setting up a
 Suite in JUnit.
