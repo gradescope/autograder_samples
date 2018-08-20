@@ -24,12 +24,12 @@ project structure were generated using the command
 
 # Files
 
-## [setup.sh](setup.sh)
+## [setup.sh](https://github.com/gradescope/autograder_samples/blob/master/java-mvn/11setup.sh)
 
 Sets up JDK 8 and maven. There's a workaround for a ca-certificates
 issue to make sure you can install things from Maven.
 
-## [run_autograder](run_autograder)
+## [run_autograder](https://github.com/gradescope/autograder_samples/blob/master/java-mvn/run_autograder)
 
 mvn compile is a built in maven goal to compile the project. -q makes
 it quiet (i.e. not spam a bunch of debugging output).
@@ -39,7 +39,7 @@ specify a main class to execute (see pom.xml). This lets you avoid
 having to figure out the proper java command to run and classpath
 arguments and the like.
 
-## [pom.xml](pom.xml)
+## [pom.xml](https://github.com/gradescope/autograder_samples/blob/master/java-mvn/pom.xml)
 
 This is a maven project file. Briefly, it describes the project, its
 dependencies/plugins, Java compiler version, and main class.
