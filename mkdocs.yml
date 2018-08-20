@@ -20,5 +20,5 @@ pages:
     - 'Python': python.md
     - 'Java': java.md
     - 'Java+Maven': java-mvn.md
-    - 'C#': C#.md
+    - 'C#': c_sharp.md
     - 'Native code via Python': diff.md
