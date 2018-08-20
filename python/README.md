@@ -57,24 +57,24 @@ JSONTestRunner().run(suite)
 
 # Files
 
-## [setup.sh](src/setup.sh)
+## [setup.sh](https://github.com/gradescope/autograder_samples/blob/master/python/src/setup.sh)
 
 This script installs Python and the pip package manager. Then it uses
 pip to install our two external dependencies.
 
-## [run_autograder](src/run_autograder)
+## [run_autograder](https://github.com/gradescope/autograder_samples/blob/master/python/src/run_autograder)
 
 This script copies the student's submission to the target directory,
 and then executes the test runner Python script.
 
-## [run_tests.py](src/run_tests.py)
+## [run_tests.py](https://github.com/gradescope/autograder_samples/blob/master/python/src/run_tests.py)
 
 This python script loads and runs the tests using the JSONTestRunner
 class from gradescope-utils. This produces the JSON formatted output
 to stdout, which is then captured and uploaded by the autograder
 harness.
 
-## [framework.py](src/framework.py)
+## [framework.py](https://github.com/gradescope/autograder_samples/blob/master/python/src/framework.py)
 
 This is a blank template file for the students to fill in. Note that
 their solution must be called calculator.py for the autograder to work
