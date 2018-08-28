@@ -2,8 +2,9 @@
 
 You can debug a submission by clicking the "Debug via SSH" button in
 the action bar at the bottom of a submission. This will allow you to
-log into a container that has your autograder code and the student's
+log into a new, empty container that has your autograder code and the student's
 code downloaded, set up in the same way as an actual autograder run.
+You can then run the autograder to see the results that it would produce.
 
 [![Debug via SSH](debug_via_ssh.png)](debug_via_ssh.png)
 
