@@ -1,4 +1,5 @@
 import unittest
+import os
 from gradescope_utils.autograder_utils.json_test_runner import JSONTestRunner
 
 
@@ -37,10 +38,20 @@ def build_test_class(data_dir):
     return klass
 
 
+def find_data_directories():
+    base_dir = './test_data'
+    return filter(
+        lambda x: os.path.isdir(os.path.join(base_dir, x)),
+        os.listdir(base_dir)
+    )
+
+
 if __name__ == '__main__':
     suite = unittest.TestSuite()
-    name = 'foo_bar_baz'
-    klass = build_test_class(name)
+    print find_data_directories()
 
-    suite.addTest(klass(TestMetaclass.test_name(name)))
+    for name in find_data_directories():
+        klass = build_test_class(name)
+        suite.addTest(klass(TestMetaclass.test_name(name)))
+
     JSONTestRunner(visibility='visible').run(suite)
