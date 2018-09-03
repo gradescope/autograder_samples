@@ -33,7 +33,10 @@ def build_test_class(data_dir):
     klass = TestMetaclass(
         TestMetaclass.klass_name(data_dir),
         (unittest.TestCase,),
-        {'data_dir': data_dir}
+        {
+            'data_dir': data_dir,
+            'shortDescription': lambda _: "Test {0}".format(data_dir)
+        }
     )
     return klass
 
