@@ -1,5 +1,6 @@
 import unittest
 import os
+import os.path
 import subprocess32 as subprocess
 from subprocess32 import PIPE
 from gradescope_utils.autograder_utils.json_test_runner import JSONTestRunner
@@ -43,8 +44,9 @@ class TestMetaclass(type):
     @staticmethod
     def generate_command(cls, dir_name):
         """Generates the command passed to Popen"""
-        # TODO: Support args
-        # TODO: allow overriding in test case
+        test_specific_script = os.path.join(BASE_DIR, dir_name, 'run.sh')
+        if os.path.isfile(test_specific_script):
+            return ["bash", test_specific_script]
         return ["bash", "./run.sh"]
 
     @staticmethod
