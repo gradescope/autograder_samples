@@ -1,6 +1,6 @@
 # Overview
 
-[View project source on GitHub](https://github.com/gradescope/autograder_samples/tree/master/diff)
+[View project source on GitHub](https://github.com/gradescope/autograder_samples/tree/master/diff_general)
 
 This is an example of using Python and the gradescope-utils library to
 implement diff-style autograding of a C assignment. The idea is that
