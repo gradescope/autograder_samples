@@ -23,20 +23,27 @@ class TestMetaclass(type):
         command = cls.generate_command(dir_name)
         n = 1                   # TODO: Allow configuring weight
 
+        def load_test_file(path):
+            full_path = os.path.join(BASE_DIR, dir_name, path)
+            if os.path.isfile(full_path):
+                with open(full_path) as f:
+                    return f.read()
+            return None
+
         @weight(n)
         def fn(self):
-            # Load command from the script
             proc = subprocess.Popen(command, stdin=PIPE, stdout=PIPE, stderr=PIPE)
-            with open(os.path.join(BASE_DIR, dir_name, 'input')) as f:
-                stdin = f.read()
+            stdin = load_test_file('input')
 
             output, err = proc.communicate(stdin, 1)  # TODO: Allow configuring timeout
 
-            # Load expected output
-            with open(os.path.join(BASE_DIR, dir_name, 'output')) as f:
-                expected_output = f.read()
+            expected_output = load_test_file('output')
+            expected_err = load_test_file('err')
+
             # TODO: Allow configuring message
             self.assertEqual(expected_output, output, msg="Output did not match expected")
+            if expected_err is not None:
+                self.assertEqual(expected_err, err, msg="Error output did not match expected")
         fn.__doc__ = 'Test {0}'.format(dir_name)
         return fn
 
