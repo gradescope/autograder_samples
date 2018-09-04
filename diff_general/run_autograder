@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+./compile.sh
+
+cd /autograder/source
+
+python run_tests.py > /autograder/results/results.json
