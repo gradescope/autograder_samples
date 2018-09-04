@@ -2,6 +2,8 @@
 
 To use the "Manual Docker Configuration" option, you'll need to use
 `gradescope/auto-builds` as the base image for your docker image.
+You can also use the tags `fedora` or `centos`, or older versions of
+Ubuntu - see the complete list [on DockerHub](https://hub.docker.com/r/gradescope/auto-builds/tags/).
 
 You'll need to ensure that your image contains the `run_autograder` script at
 the path `/autograder/run_autograder`. This should match the requirements
