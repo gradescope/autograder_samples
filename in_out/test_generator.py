@@ -20,7 +20,7 @@ class TestMetaclass(type):
     @classmethod
     def generate_test(cls, dir_name):
         """ Returns a testcase for the given directory """
-        command = cls.generate_command(cls, dir_name)
+        command = cls.generate_command(dir_name)
         n = 1                   # TODO: Allow configuring weight
 
         @weight(n)
@@ -41,7 +41,7 @@ class TestMetaclass(type):
         return fn
 
     @staticmethod
-    def generate_command(cls, dir_name):
+    def generate_command(dir_name):
         """Generates the command passed to Popen"""
         test_specific_script = os.path.join(BASE_DIR, dir_name, 'run.sh')
         if os.path.isfile(test_specific_script):
