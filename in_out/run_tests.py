@@ -9,7 +9,7 @@ class TestMetaclass(type):
     """
     def __new__(cls, name, bases, attrs):
         data_dir = attrs['data_dir']
-        attrs['test_%s' % data_dir] = cls.generate_test(data_dir)
+        attrs[cls.test_name(data_dir)] = cls.generate_test(data_dir)
 
         return super(TestMetaclass, cls).__new__(cls, name, bases, attrs)
 
