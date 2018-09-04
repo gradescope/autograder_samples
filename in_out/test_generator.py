@@ -4,6 +4,7 @@ import os.path
 import subprocess32 as subprocess
 from subprocess32 import PIPE
 from gradescope_utils.autograder_utils.decorators import weight
+import yaml
 
 BASE_DIR = './test_data'
 
@@ -21,7 +22,6 @@ class TestMetaclass(type):
     def generate_test(cls, dir_name):
         """ Returns a testcase for the given directory """
         command = cls.generate_command(dir_name)
-        n = 1                   # TODO: Allow configuring weight
 
         def load_test_file(path):
             full_path = os.path.join(BASE_DIR, dir_name, path)
@@ -30,20 +30,30 @@ class TestMetaclass(type):
                     return f.read()
             return None
 
-        @weight(n)
+        def load_settings():
+            settings_yml = load_test_file('settings.yml')
+
+            if settings_yml is not None:
+                return yaml.safe_load(settings_yml) or {}
+            else:
+                return {}
+
+        settings = load_settings()
+
+        @weight(settings.get('weight', 1))
         def fn(self):
             proc = subprocess.Popen(command, stdin=PIPE, stdout=PIPE, stderr=PIPE)
             stdin = load_test_file('input')
 
-            output, err = proc.communicate(stdin, 1)  # TODO: Allow configuring timeout
+            output, err = proc.communicate(stdin, settings.get('timeout', 1))
 
             expected_output = load_test_file('output')
             expected_err = load_test_file('err')
 
-            # TODO: Allow configuring message
-            self.assertEqual(expected_output, output, msg="Output did not match expected")
+            msg = settings.get('msg', "Output did not match expected")
+            self.assertEqual(expected_output, output, msg=msg)
             if expected_err is not None:
-                self.assertEqual(expected_err, err, msg="Error output did not match expected")
+                self.assertEqual(expected_err, err, msg=msg)
         fn.__doc__ = 'Test {0}'.format(dir_name)
         return fn
 
