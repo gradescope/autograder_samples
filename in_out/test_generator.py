@@ -19,7 +19,7 @@ class TestMetaclass(type):
 
     @classmethod
     def generate_test(cls, dir_name):
-        # Return a testcase for the given directory
+        """ Returns a testcase for the given directory """
         command = cls.generate_command(cls, dir_name)
         n = 1                   # TODO: Allow configuring weight
 
