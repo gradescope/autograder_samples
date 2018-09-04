@@ -18,6 +18,7 @@ class TestMetaclass(type):
         # Return a testcase for the given directory
         def fn(self):
             self.assertEqual(dir_name, None)
+        fn.__doc__ = 'Test {0}'.format(dir_name)
         return fn
 
     @staticmethod
@@ -34,8 +35,7 @@ def build_test_class(data_dir):
         TestMetaclass.klass_name(data_dir),
         (unittest.TestCase,),
         {
-            'data_dir': data_dir,
-            'shortDescription': lambda _: "Test {0}".format(data_dir)
+            'data_dir': data_dir
         }
     )
     return klass
