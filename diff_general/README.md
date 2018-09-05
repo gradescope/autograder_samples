@@ -18,7 +18,8 @@ don't necessarily write specific functions.
 ## Building and executing code
 
 - **compile.sh**: This script should do whatever is necessary to
-  compile the student's code. Leave this blank if nothing needs to be compiled.
+  compile the student's code. If nothing needs to be compiled, you can
+  use this file to copy the student's files to the right directory.
 - **run.sh**: This script should run the student's program. This can
   be overridden for a given test case.
 
