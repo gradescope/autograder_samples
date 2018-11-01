@@ -8,7 +8,7 @@ cd /autograder/source
 cp /autograder/submission/IntList.java /autograder/source/src/main/java/com/gradescope/intlist/
 
 # Compile the student's code with autograder code
-./compile.sh
+bash ./compile.sh
 
 # Run the autograder code
-./run.sh > /autograder/results/results.json
+bash ./run.sh > /autograder/results/results.json
