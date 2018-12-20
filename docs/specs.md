@@ -33,7 +33,7 @@ Gradescope's autograder harness will create the following files:
 Your autograder's output should be in the file results.json, in the following format:
 
 ```
-{ "score": 44.0, // optional, but required if not on each test case below
+{ "score": 44.0, // optional, but required if not on each test case below. Overrides total of tests if specified.
   "execution_time": 136, // optional, seconds
   "output": "Text relevant to the entire submission", // optional
   "visibility": "after_due_date", // Optional visibility setting
