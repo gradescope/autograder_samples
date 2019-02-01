@@ -4,7 +4,11 @@
 
 This example shows how to set up an autograder on Gradescope for a
 Java project. It uses JUnit, JDK8, and Josh Hug's jh61b library for
-producing output in JSON format.
+producing output in JSON format.https://github.com/tkutche1/jgrade
+
+## Alternatives
+
+You may want to check out [https://github.com/tkutche1/jgrade](JGrade), a library created by JHU instructors, which is more actively maintained.
 
 ## Project Description
 
