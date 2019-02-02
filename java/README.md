@@ -8,7 +8,7 @@ producing output in JSON format.https://github.com/tkutche1/jgrade
 
 ## Alternatives
 
-You may want to check out [https://github.com/tkutche1/jgrade](JGrade), a library created by JHU instructors, which is more actively maintained.
+You may want to check out [JGrade](https://github.com/tkutche1/jgrade), a library created by JHU instructors, which is more actively maintained.
 
 ## Project Description
 
