@@ -37,10 +37,10 @@ any further questions, feel free to contact us at
 
 # Pricing
 
-Starting Fall 2017, the autograder platform will be available with
-paid school site licenses and for individual courses that pay for
-access to our "Gradescope Complete" tier (see our [pricing
-page](https://gradescope.com/pricing) for more information).
+The autograder platform is available with paid school site licenses
+and for individual courses that pay for access to our "Gradescope
+Complete" tier (see our [pricing page](https://gradescope.com/pricing)
+for more information).
 
 If you're an existing user or have any questions regarding pricing,
 please contact us at
