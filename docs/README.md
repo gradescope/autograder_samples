@@ -39,7 +39,7 @@ any further questions, feel free to contact us at
 
 The autograder platform is available with paid school site licenses
 and for individual courses that pay for access to our "Gradescope
-Complete" tier (see our [pricing page](https://gradescope.com/pricing)
+Complete" tier (see our [pricing page](https://www.gradescope.com/pricing)
 for more information).
 
 If you're an existing user or have any questions regarding pricing,
