@@ -1,2 +1,2 @@
 all:
-	zip -r autograder.zip *
+	zip -r -FS autograder.zip *
