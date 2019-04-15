@@ -51,7 +51,7 @@ class TestMetaclass(type):
             expected_output = load_test_file('output')
             expected_err = load_test_file('err')
 
-            msg = settings.get('msg', "Output did not match expected")
+            msg = settings.get('msg', "Output did not match expected.")
 
             diff = difflib.unified_diff(expected_output.splitlines(True), output.splitlines(True), fromfile='expected_output', tofile='actual_output')
 
