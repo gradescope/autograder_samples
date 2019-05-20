@@ -4,7 +4,7 @@ Autograders are uploaded to Gradescope in zip format. The file must
 contain at least two files in the root of the archive:
 
 - **setup.sh**: a setup (Bash) script that installs all your dependencies. We're
-  running on Ubuntu images, so you can use apt, or any other means of
+  running on Ubuntu 18.04 images, so you can use apt, or any other means of
   setting up packages.
 
 - **run_autograder**: an executable script, in any language (with
