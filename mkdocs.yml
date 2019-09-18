@@ -22,3 +22,4 @@ pages:
     - 'Java+Maven': java-mvn.md
     - 'C#': c_sharp.md
     - 'Native code via Python': diff.md
+- 'Community Resources': resources.md
