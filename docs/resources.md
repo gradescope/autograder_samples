@@ -12,6 +12,6 @@ directly.
 Name | Description
 -----| -----------
 [jgrade](https://github.com/tkutche1/jgrade) | A Java helper library for building autograders for Gradescope
-[UCSB Gradescope Tools](https://ucsb-gradescope-tools.github.io/) | Tools and examples for C++, Python autograders, as well some other things
+[UCSB Gradescope Tools](https://ucsb-gradescope-tools.github.io/) | Tools and examples for C++ and Python autograders, pulling from GitHub, etc
 [GradescopeGrader4Autolab](https://github.com/xyzisinus/GradescopeGrader4Autolab) | Tools to help port Autolab autograders to Gradescope
 [mnoukhov/gradescope-autograder-template](https://github.com/mnoukhov/gradescope-autograder-template) | An autograder template for Python autograders
