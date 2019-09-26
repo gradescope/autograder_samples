@@ -10,6 +10,7 @@ information:
 
 ```
 {
+  "id": 123456 // Unique identifier for this particular submission
   "created_at": "2018-07-01T14:22:32.365935-07:00", // Submission time
   "assignment": { // Assignment details
     "due_date": "2018-07-31T23:00:00.000000-07:00",
@@ -20,6 +21,7 @@ information:
     "release_date": "2018-07-02T00:00:00.000000-07:00",
     "title": "Programming Assignment 1",
     "total_points": "20.0" // Total point value, including any manual grading portion
+    "submission_method": "upload" // Can be "upload", "GitHub", or "Bitbucket"
   },
   "users": [
     {
