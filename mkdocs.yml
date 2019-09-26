@@ -21,5 +21,6 @@ pages:
     - 'Java': java.md
     - 'Java+Maven': java-mvn.md
     - 'C#': c_sharp.md
+    - 'General output-checking autograder': diff_general.md
     - 'Native code via Python': diff.md
 - 'Community Resources': resources.md
