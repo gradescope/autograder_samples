@@ -11,6 +11,10 @@ contain at least two files in the root of the archive:
   appropriate `#!` line), that compiles and runs your autograder suite
   and produces the output in the correct place.
 
+**Note**: When you are zipping up your files, make sure to zip the files, and not the folder containing the files. If you zip up the folder then the required files won't be at the root of the zip archive, but rather under a subdirectory, so we won't be able to find them. See the image below for a demonstration of the correct approach on MacOS.
+
+[![Zipping up files](zipping_files.png)](zipping_files.png)
+
 ## File hierarchy
 
 All autograder related files will be in the /autograder directory. This directory structure is set up when the autograder Docker image is built.
