@@ -17,6 +17,7 @@ information:
     "group_size": 4, // Maximum group size, or null if not set
     "group_submission": true, // Whether group submission is allowed
     "id": 25828, // Gradescope assignment ID
+    "course_id": 1234, // Gradescope course ID
     "late_due_date": null, // Late due date, if set
     "release_date": "2018-07-02T00:00:00.000000-07:00",
     "title": "Programming Assignment 1",
