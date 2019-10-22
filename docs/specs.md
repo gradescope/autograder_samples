@@ -13,7 +13,7 @@ contain at least two files in the root of the archive:
 
 **Note**: When you are zipping up your files, make sure to zip the files, and not the folder containing the files. If you zip up the folder then the required files won't be at the root of the zip archive, but rather under a subdirectory, so we won't be able to find them. See the image below for a demonstration of the correct approach on MacOS.
 
-[![Zipping up files](zipping_files.png)](zipping_files.png)
+[<img src="../zipping_files.png" width="619px" />](zipping_files.png)
 
 ## File hierarchy
 
