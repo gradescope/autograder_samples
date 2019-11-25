@@ -1,6 +1,6 @@
 # Gradescope Python MySQL Autograder Example
 
-[View project source on Github](https://github.com/gradescope/autograder_samples/tree/master/mysql/src) - [autograder.zip](https://github.com/gradescope/autograder_samples/raw/master/mysql/autograder.zip) - [sample solution](https://github.com/gradescope/autograder_samples/raw/master/mysql/solution/queries.py)
+[View project source on Github](https://github.com/gradescope/autograder_samples/tree/master/mysql) - [autograder.zip](https://github.com/gradescope/autograder_samples/raw/master/mysql/autograder.zip) - [sample solution](https://github.com/gradescope/autograder_samples/raw/master/mysql/solution/queries.py)
 
 ## Project Description
 
@@ -29,7 +29,7 @@ test from showing up in another test. You will probably want to
 implement this for any serious testing that could involve mutations of
 the test database. For example, if one test updates or deletes data in
 the database, the changes should be rolled back before another test
-runs, or else the validity of the tests will depend on the order in
+runs. Otherwise, the validity of the tests will depend on the order in
 which the tests are run, which is problematic.
 
 # Files
