@@ -5,10 +5,12 @@ from queries import Queries
 
 class TestSimpleQueries(unittest.TestCase):
     def setUp(self):
-        self.connection = mysql.connector.connect(database='test_data')
-        self.queries = Queries(self.connection)
+        self.connection = mysql.connector.connect(user='test', password='password', database='test_data')
+        self.cursor = self.connection.cursor()
+        self.queries = Queries(self.cursor)
 
     def tearDown(self):
+        self.cursor.close()
         self.connection.close()
 
     @weight(1)

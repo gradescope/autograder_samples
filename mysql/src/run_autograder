@@ -2,8 +2,6 @@
 
 # Start MySQL server
 service mysql start
-# Import test data
-mysql < database.sql
 
 # Set up autograder files
 cp /autograder/submission/queries.py /autograder/source/queries.py

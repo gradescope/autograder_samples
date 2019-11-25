@@ -1,6 +1,10 @@
 CREATE DATABASE test_data;
 USE test_data;
 
+-- Create user, grant access to database
+CREATE USER 'test'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL on test_data.* to 'test'@'localhost';
+
 CREATE TABLE departments (
        id bigint unsigned not null auto_increment,
        name varchar(255) not null,
