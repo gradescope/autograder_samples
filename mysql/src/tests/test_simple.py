@@ -22,5 +22,5 @@ class TestSimpleQueries(unittest.TestCase):
     @weight(1)
     def test_department_expenses(self):
         """Get department expenses by name"""
-        val = self.queries.department_budget("Engineering")
+        val = self.queries.department_expenses("Engineering")
         self.assertEqual(val, 200000)
