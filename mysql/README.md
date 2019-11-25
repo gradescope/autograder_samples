@@ -1,4 +1,4 @@
-# Gradescope Python MySQL Autograder Example
+# Gradescope MySQL Autograder Example
 
 [View project source on Github](https://github.com/gradescope/autograder_samples/tree/master/mysql) - [autograder.zip](https://github.com/gradescope/autograder_samples/raw/master/mysql/autograder.zip) - [sample solution](https://github.com/gradescope/autograder_samples/raw/master/mysql/solution/queries.py)
 
