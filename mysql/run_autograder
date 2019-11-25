@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# Start MySQL server
+service mysql start
+
+# Set up autograder files
+cp /autograder/submission/queries.py /autograder/source/queries.py
+
+cd /autograder/source
+
+python run_tests.py > /autograder/results/results.json
