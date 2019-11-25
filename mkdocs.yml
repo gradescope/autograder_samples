@@ -23,4 +23,5 @@ pages:
     - 'C#': c_sharp.md
     - 'General output-checking autograder': diff_general.md
     - 'Native code via Python': diff.md
+    - 'MySQL': mysql.md
 - 'Community Resources': resources.md
