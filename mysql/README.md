@@ -76,6 +76,10 @@ This is a blank template file for the students to fill in. It provides
 function signatures for methods that will query the database and
 return some desired value.
 
+## [solution/queries.py](https://github.com/gradescope/autograder_samples/blob/master/mysql/solution/queries.py)
+
+This is a filled-in version of the above template file.
+
 ## Example Test
 
 ```
