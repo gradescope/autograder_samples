@@ -1,0 +1,3 @@
+gradescope-utils>=0.2.7
+subprocess32
+mysql-connector-python
