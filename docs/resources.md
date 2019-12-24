@@ -13,6 +13,6 @@ Name | Description
 -----| -----------
 [jgrade](https://github.com/tkutche1/jgrade) | A Java helper library for building autograders for Gradescope
 [UCSB Gradescope Tools](https://ucsb-gradescope-tools.github.io/) | Tools and examples for C++ and Python autograders, pulling from GitHub, etc
-[GradescopeGrader4Autolab](https://github.com/xyzisinus/GradescopeGrader4Autolab) | A bridging grader to help port Autolab autograders to Gradescope
+[GradescopeGrader4Autolab](https://github.com/xyzisinus/GradescopeGrader4Autolab) | A wrapper autograder to help port Autolab autograders to Gradescope
 [mnoukhov/gradescope-autograder-template](https://github.com/mnoukhov/gradescope-autograder-template) | An autograder template for Python autograders
 [C++ Configurable Autograder Sample](https://github.com/UgiR/gradescope-autograde-cpp) | Configurable autograder template with C++ tooling
