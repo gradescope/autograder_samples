@@ -181,8 +181,9 @@ public class GradedTestListenerJSON extends RunListener {
       */
     public void testFailure(Failure failure) throws Exception {
         currentTestResult.setScore(0);
-        currentTestResult.addOutput("Test Failed!\n");
-        System.out.println(JUnitUtilities.failureToString(failure));
+        currentTestResult.addOutput("Test Failed: ");
+        currentTestResult.addOutput(JUnitUtilities.failureToString(failure));
+	  currentTestResult.addOutput("\n");
         //currentTestResult.addOutput(failure.getTrace());
     }
 
