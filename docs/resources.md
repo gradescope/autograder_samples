@@ -17,4 +17,4 @@ Name | Description
 [mnoukhov/gradescope-autograder-template](https://github.com/mnoukhov/gradescope-autograder-template) | An autograder template for Python autograders
 [C++ Configurable Autograder Sample](https://github.com/UgiR/gradescope-autograde-cpp) | Configurable autograder template with C++ tooling
 [R autograder](https://github.com/guerzh/r_autograde_gradescope) | A sample Gradescope-compatible autograder for R scripts
-[Otter-Grader](https://otter-grader.readthedocs.io/) | A Jupyter Notebook/Python autograder that is compatible with the Gradescope autograder
+[Otter-Grader](https://otter-grader.readthedocs.io/) | A Jupyter Notebook/Python autograder that is compatible with the Gradescope autograder platform
