@@ -18,4 +18,4 @@ Name | Description
 [C++ Configurable Autograder Sample](https://github.com/UgiR/gradescope-autograde-cpp) | Configurable autograder template with C++ tooling
 [R autograder](https://github.com/guerzh/r_autograde_gradescope) | A sample Gradescope-compatible autograder for R scripts
 [Otter-Grader](https://otter-grader.readthedocs.io/) | A Jupyter Notebook/Python autograder that is compatible with the Gradescope autograder platform
-[pytest with Gradescope](https://github.com/GRudolph/autograder_samples/python3-pytest) | A minimal example that uses pytest instead of unittest for Python 3 code with Gradescope
+[pytest with Gradescope](https://github.com/GRudolph/autograder_samples/tree/master/python3-pytest) | A minimal example that uses pytest instead of unittest for Python 3 code with Gradescope
