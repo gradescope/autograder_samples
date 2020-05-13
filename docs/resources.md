@@ -19,3 +19,4 @@ Name | Description
 [R autograder](https://github.com/guerzh/r_autograde_gradescope) | A sample Gradescope-compatible autograder for R scripts
 [Otter-Grader](https://otter-grader.readthedocs.io/) | A Jupyter Notebook/Python autograder that is compatible with the Gradescope autograder platform
 [pytest with Gradescope](https://github.com/GRudolph/autograder_samples/tree/master/python3-pytest) | A minimal example that uses pytest instead of unittest for Python 3 code with Gradescope
+[SQLite3 with Gradescope](https://github.com/scotpatti/SQLiteAutograder) | A lightweight autograder for SQLite3. Handles multiple queries and returns the number right as the grade. Running six complex queries, students usually receive their grades in 6-10 seconds. 
