@@ -17,6 +17,7 @@ Name | Description
 [mnoukhov/gradescope-autograder-template](https://github.com/mnoukhov/gradescope-autograder-template) | An autograder template for Python autograders
 [C++ Configurable Autograder Sample](https://github.com/UgiR/gradescope-autograde-cpp) | Configurable autograder template with C++ tooling
 [R autograder](https://github.com/guerzh/r_autograde_gradescope) | A sample Gradescope-compatible autograder for R scripts
+[R autograder using the gradeR package](https://github.com/tbrown122387/Using-gradeR-for-the-Gradescope-Autograder) | Another R autograder with a fully-worked example
 [Otter-Grader](https://otter-grader.readthedocs.io/) | A Jupyter Notebook/Python autograder that is compatible with the Gradescope autograder platform
 [pytest with Gradescope](https://github.com/GRudolph/autograder_samples/tree/master/python3-pytest) | A minimal example that uses pytest instead of unittest for Python 3 code with Gradescope
 [SQLite3 with Gradescope](https://github.com/scotpatti/SQLiteAutograder) | A lightweight autograder for SQLite3. Handles multiple queries and returns the number right as the grade. Running six complex queries, students usually receive their grades in 6-10 seconds. 
