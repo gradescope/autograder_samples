@@ -34,6 +34,7 @@ any further questions, feel free to contact us at
 - [Python](python/)
 - [Java (JUnit)](java/)
   - [Java+Maven](java-mvn/)
+- [R](r/)
 
 # Pricing
 
