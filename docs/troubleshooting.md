@@ -14,13 +14,20 @@ of the settings for your assignment.
 
 ### Your submission timed out
 
-We have a default overall timeout of 20 minutes. If your autograder script takes
+We have a default overall timeout of 10 minutes. If your autograder script takes
 longer than that on our platform, it'll be forcibly terminated to avoid clogging
 resources. To avoid running into our global timeout, we recommend adding
 timeouts to your individual test cases - that'll at least allow your students to
 receive a partial score for the parts that do terminate in a reasonable time
 span. If they are subject to the global timeout, the submission will receive a 0
 and, they won't see which tests were able to run successfully.
+
+You can increase the timeout for your assignment on the assignment's settings
+page, up to a maximum of 40 minutes. We don't recommend increasing it beyond
+what you expect to need, because for submissions that don't terminate it will
+just take that much longer to for the autograder to time out. Ideally, we would
+recommend adding your own timeouts to individual test cases so that a mistake in
+one test case does not cause a student to get a 0 overall.
 
 Keep in mind that on our autograder cluster, multiple tasks are running
 concurrently. By default, each autograder is allocated 1/4 of a virtual CPU, so
