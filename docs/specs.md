@@ -97,8 +97,7 @@ keeping the set of tests that they will be graded on hidden until after the
 assignment is due.
 
 If test cases are hidden, students will not be able to see their total
-score. Test cases with visibility set to `hidden` don't affect this, since they
-should only be used for tests which don't contribute points to the total.
+score.
 
 ### Controlling standard output visibility
 
