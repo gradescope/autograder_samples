@@ -22,8 +22,8 @@ information:
     "release_date": "2018-07-02T00:00:00.000000-07:00",
     "title": "Programming Assignment 1",
     "total_points": "20.0" // Total point value, including any manual grading portion
-    "submission_method": "upload" // Can be "upload", "GitHub", or "Bitbucket"
   },
+  "submission_method": "upload", // Can be "upload", "GitHub", or "Bitbucket"
   "users": [
     {
       "email": "student@example.com",
