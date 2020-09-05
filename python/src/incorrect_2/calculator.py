@@ -19,7 +19,7 @@ class Calculator(object):
 
     def read(self):
         """Read input from stdin"""
-        return raw_input('> ')
+        return input('> ')
 
     def eval(self, string):
         """Evaluates an infix arithmetic expression"""
