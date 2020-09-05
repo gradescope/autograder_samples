@@ -11,7 +11,7 @@ class TestIntegration(unittest.TestCase):
     @tags("integration")
     def test_single_input(self):
         """Evaluate 1 + 1 in the REPL"""
-        calc = subprocess.Popen('python -u calculator.py'.split(),
+        calc = subprocess.Popen('python3 -u calculator.py'.split(),
                                 stdin=subprocess.PIPE, stdout=subprocess.PIPE)
         output, err = calc.communicate("1 + 1\n", 1)
         self.assertTrue(output.startswith(">"))    # Check for presence of prompt
@@ -23,7 +23,7 @@ class TestIntegration(unittest.TestCase):
     @tags("integration")
     def test_quit(self):
         """Quit the REPL"""
-        calc = subprocess.Popen('python -u calculator.py'.split(),
+        calc = subprocess.Popen('python3 -u calculator.py'.split(),
                                 stdin=subprocess.PIPE, stdout=subprocess.PIPE)
         calc.communicate("quit\n", 1)
 
