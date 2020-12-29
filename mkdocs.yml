@@ -5,6 +5,7 @@ theme: readthedocs
 extra_css: [gradescope.css]
 pages:
 - 'Home': index.md
+- 'Recent Changes': changes.md
 - 'Getting Started': getting_started.md
 - 'Autograder Specifications': specs.md
 - 'Manual Grading': manual_grading.md

@@ -1,5 +1,7 @@
 [![Documentation Status](https://readthedocs.org/projects/gradescope-autograders/badge/?version=latest)](https://gradescope-autograders.readthedocs.org/en/latest/?badge=latest)
 
+> **🗞️ Our autograder platform is in active development! See the [Recent Changes](changes/) page to see what we've updated recently.**
+
 # Overview
 
 Gradescope provides a language-agnostic platform for running your
