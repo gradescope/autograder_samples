@@ -35,6 +35,20 @@ any further questions, feel free to contact us at
 - [Java (JUnit)](java/)
   - [Java+Maven](java-mvn/)
 
+# Getting Help
+
+If you need any help getting set up with the autograder platform,
+please contact us at
+[help@gradescope.com](mailto:help@gradescope.com). Please include as
+much detail as possible, such as the programming language you're
+trying to use, what you've tried, what errors you are seeing,
+etc. Please also include a link to the assignment on Gradescope.
+
+You can also ask questions on the [GitHub discussions
+forum](https://github.com/gradescope/autograder_samples/discussions)
+for this project, especially if there is no private information in
+your question.
+
 # Pricing
 
 The autograder platform is available with paid school site licenses
