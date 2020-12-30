@@ -13,7 +13,7 @@ distributing the results back to students and to you.
 
 !!! note "Updates"
     Our autograder platform is under active development! Check out the
-    [Recent Changes](changes/) page to see what we've updated recently.
+    [Updates](updates/) page to see what we've changed recently.
 
 # How it works
 
