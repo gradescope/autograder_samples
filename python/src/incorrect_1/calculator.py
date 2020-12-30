@@ -1,6 +1,3 @@
-from __future__ import print_function
-
-
 class CalculatorException(Exception):
     """A class to throw if you come across incorrect syntax or other issues"""
     def __init__(self, value):
@@ -19,7 +16,7 @@ class Calculator(object):
 
     def read(self):
         """Read input from stdin"""
-        return raw_input('> ')
+        return input('> ')
 
     def lex(self, string):
         """Break the string up into tokens"""

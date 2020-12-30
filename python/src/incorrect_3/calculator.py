@@ -1,4 +1,3 @@
-from __future__ import print_function
 import re
 
 
@@ -45,7 +44,7 @@ class Calculator(object):
 
     def read(self):
         """Read input from stdin"""
-        return raw_input('> ')
+        return input('> ')
 
     def lex(self, string):
         """Break an input string into tokens"""

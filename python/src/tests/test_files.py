@@ -9,6 +9,6 @@ class TestFiles(unittest.TestCase):
         """Check submitted files"""
         missing_files = check_submitted_files(['calculator.py'])
         for path in missing_files:
-            print 'Missing {0}'.format(path)
+            print('Missing {0}'.format(path))
         self.assertEqual(len(missing_files), 0, 'Missing some required files!')
-        print 'All required files submitted!'
+        print('All required files submitted!')
