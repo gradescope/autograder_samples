@@ -11,6 +11,10 @@ script, along with whatever supporting code you need, and we manage
 accepting student submissions, running your autograder at scale, and
 distributing the results back to students and to you.
 
+!!! note "Updates"
+    Our autograder platform is under active development! Check out the
+    [Updates](updates/) page to see what we've changed recently.
+
 # How it works
 
 As an instructor, you create a new assignment on Gradescope, and

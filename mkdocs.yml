@@ -5,6 +5,7 @@ theme: readthedocs
 extra_css: [gradescope.css]
 pages:
 - 'Home': index.md
+- 'Updates': updates.md
 - 'Getting Started': getting_started.md
 - 'Autograder Specifications': specs.md
 - 'Manual Grading': manual_grading.md
@@ -26,3 +27,5 @@ pages:
     - 'Native code via Python': diff.md
     - 'MySQL': mysql.md
 - 'Community Resources': resources.md
+markdown_extensions:
+  - admonition
