@@ -1,3 +1,2 @@
 gradescope-utils>=0.2.6
-subprocess32
 pyyaml

@@ -1,8 +1,8 @@
 import unittest
 import os
 import os.path
-import subprocess32 as subprocess
-from subprocess32 import PIPE
+import subprocess
+from subprocess import PIPE
 from gradescope_utils.autograder_utils.decorators import weight
 import yaml
 
@@ -86,7 +86,4 @@ def build_test_class(data_dir):
 
 
 def find_data_directories():
-    return filter(
-        lambda x: os.path.isdir(os.path.join(BASE_DIR, x)),
-        os.listdir(BASE_DIR)
-    )
+    return [x for x in os.listdir(BASE_DIR) if os.path.isdir(os.path.join(BASE_DIR, x))]

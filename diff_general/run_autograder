@@ -4,4 +4,4 @@ cd /autograder/source
 
 bash ./compile.sh
 
-python run_tests.py > /autograder/results/results.json
+python3 run_tests.py > /autograder/results/results.json
