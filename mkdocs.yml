@@ -27,3 +27,5 @@ pages:
     - 'Native code via Python': diff.md
     - 'MySQL': mysql.md
 - 'Community Resources': resources.md
+markdown_extensions:
+  - admonition

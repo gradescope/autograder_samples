@@ -1,7 +1,5 @@
 [![Documentation Status](https://readthedocs.org/projects/gradescope-autograders/badge/?version=latest)](https://gradescope-autograders.readthedocs.org/en/latest/?badge=latest)
 
-> **🗞️ Our autograder platform is in active development! See the [Recent Changes](changes/) page to see what we've updated recently.**
-
 # Overview
 
 Gradescope provides a language-agnostic platform for running your
@@ -12,6 +10,10 @@ assignments. You provide us with a setup script and an autograder
 script, along with whatever supporting code you need, and we manage
 accepting student submissions, running your autograder at scale, and
 distributing the results back to students and to you.
+
+!!! note "Updates"
+    Our autograder platform is under active development! Check out the
+    [Recent Changes](changes/) page to see what we've updated recently.
 
 # How it works
 
