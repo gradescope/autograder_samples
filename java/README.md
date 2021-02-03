@@ -3,7 +3,7 @@
 [View project source on Github](https://github.com/gradescope/autograder_samples/tree/master/java)
 
 This example shows how to set up an autograder on Gradescope for a
-Java project. It uses JUnit, JDK8, and Josh Hug's jh61b library for
+Java project. It uses JUnit, JDK11, and Josh Hug's jh61b library for
 producing output in JSON format.
 
 ## Alternatives
@@ -19,15 +19,15 @@ values.
 
 - JUnit: Popular Java unit testing framework
 - jh61b: Among other things, this provides annotations for JUnit tests that allows setting point values and names, and a test listener that produces output in JSON format
-- JDK8: jh61b uses String.join() which is added in JDK8. If you need versions <8, you just need to replace this part of the code
+- JDK11: jh61b uses String.join() which is added in JDK8. If you need versions <8, you just need to replace this part of the code
 
 # Files
 
 ## [setup.sh](https://github.com/gradescope/autograder_samples/blob/master/java/setup.sh)
 
-Sets up OpenJDK 8.
+Sets up OpenJDK 11.
 
-Note: Installing JDK8 takes a few minutes, so building the image takes
+Note: Installing JDK11 takes a few minutes, so building the image takes
 a while. We may later provide base images to speed this up.
 
 ## [run_autograder](https://github.com/gradescope/autograder_samples/blob/master/java/run_autograder)
