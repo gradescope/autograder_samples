@@ -49,3 +49,12 @@ output file format. They'll see a list of test cases that they've
 passed and failed, and any output you provide.
 
 [![Student results](results.png)](results.png)
+
+Note that the autograder is run automatically only on new submissions. If
+you update the autograder for the assignment and want to run the new
+autograder on an existing submission, or if you'd like
+to rerun the autograder on a submission, you can do so manually by
+clicking on "Rerun Autograder".
+
+You can rerun the autograder for all submissions by clicking on "Regrade
+All Submissions" on the Manage Submissions page.
