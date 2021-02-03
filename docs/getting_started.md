@@ -57,4 +57,4 @@ to rerun the autograder on a submission, you can do so manually by
 clicking on "Rerun Autograder".
 
 You can rerun the autograder for all submissions by clicking on "Regrade
-all submissions" on the Manage Submissions page.
+All Submissions" on the Manage Submissions page.
