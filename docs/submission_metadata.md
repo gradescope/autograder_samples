@@ -10,7 +10,7 @@ information:
 
 ```
 {
-  "id": 123456 // Unique identifier for this particular submission
+  "id": 123456, // Unique identifier for this particular submission
   "created_at": "2018-07-01T14:22:32.365935-07:00", // Submission time
   "assignment": { // Assignment details
     "due_date": "2018-07-31T23:00:00.000000-07:00",
