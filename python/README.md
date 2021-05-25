@@ -56,7 +56,7 @@ JSONTestRunner().run(suite)
 
 This will load tests from the `tests/` directory in your autograder source code,
 [loading only files starting with `test` by default](https://docs.python.org/3/library/unittest.html#unittest.TestLoader.discover).
-`JSONTestRunner` included in `gradescope-utils`, as described below.
+`JSONTestRunner` is included in `gradescope-utils`, as described below.
 
 # Files
 
