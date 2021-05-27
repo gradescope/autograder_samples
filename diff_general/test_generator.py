@@ -5,6 +5,7 @@ import subprocess32 as subprocess
 from subprocess32 import PIPE
 from gradescope_utils.autograder_utils.decorators import weight
 import yaml
+import difflib
 
 BASE_DIR = './test_data'
 
@@ -50,9 +51,20 @@ class TestMetaclass(type):
             expected_output = load_test_file('output')
             expected_err = load_test_file('err')
 
-            msg = settings.get('msg', "Output did not match expected")
+            msg = settings.get('msg', "Output did not match expected.")
+
+            diff = difflib.unified_diff(expected_output.splitlines(True), output.splitlines(True), fromfile='expected_output', tofile='actual_output')
+
+            if diff is not None:
+                msg += "\nThe differences between expected standard output and actual standard output are as follows:\n" + ''.join(diff)
+
             self.assertEqual(expected_output, output, msg=msg)
             if expected_err is not None:
+                diff = difflib.unified_diff(expected_err.splitlines(True), err.splitlines(True), fromfile='expected_err', tofile='actual_err')
+
+                if diff is not None:
+                    msg += "\nThe differences between expected standard error and actual standard error are as follows:\n" + ''.join(diff)
+
                 self.assertEqual(expected_err, err, msg=msg)
         fn.__doc__ = 'Test {0}'.format(dir_name)
         return fn
