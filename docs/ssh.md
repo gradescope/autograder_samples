@@ -22,7 +22,7 @@ for how to generate one. If copying from a terminal, make sure that
 you don't include any line breaks, because there should not be any
 line breaks in a public key.
 
-### Account setttings
+### Account settings
 
 Once you have added one SSH key, you can add more keys or change
 existing keys by going to the
