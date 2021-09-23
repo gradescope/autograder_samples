@@ -12,9 +12,9 @@ class TestDiff(unittest.TestCase):
         """Invalid Input (no argument)"""
         fib = subprocess.Popen(["./fib"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = fib.stdout.read().strip()
-        self.assertEqual(output, "")
+        self.assertEqual(output, b"")
         err = fib.stderr.read().strip()
-        referenceOutput = "Error: Insufficient arguments."
+        referenceOutput = b"Error: Insufficient arguments."
         self.assertEqual(err, referenceOutput)
         fib.terminate()
 
@@ -23,9 +23,9 @@ class TestDiff(unittest.TestCase):
         """Invalid Input (0)"""
         fib = subprocess.Popen(["./fib", "0"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output = fib.stdout.read().strip()
-        self.assertEqual(output, "")
+        self.assertEqual(output, b"")
         err = fib.stderr.read().strip()
-        referenceOutput = "Error: number must be greater than 0."
+        referenceOutput = b"Error: number must be greater than 0."
         self.assertEqual(err, referenceOutput)
         fib.terminate()
 
@@ -34,7 +34,7 @@ class TestDiff(unittest.TestCase):
         """1st Fibonacci Number"""
         fib = subprocess.Popen(["./fib", "1"], stdout=subprocess.PIPE)
         output = fib.stdout.read().strip()
-        referenceOutput = "1"
+        referenceOutput = b"1"
         self.assertEqual(output, referenceOutput)
         fib.terminate()
 
@@ -43,7 +43,7 @@ class TestDiff(unittest.TestCase):
         """2nd Fibonacci Number"""
         fib = subprocess.Popen(["./fib", "2"], stdout=subprocess.PIPE)
         output = fib.stdout.read().strip()
-        referenceOutput = "1"
+        referenceOutput = b"1"
         self.assertEqual(output, referenceOutput)
         fib.terminate()
 
@@ -52,7 +52,7 @@ class TestDiff(unittest.TestCase):
         """3rd Fibonacci Number"""
         fib = subprocess.Popen(["./fib", "3"], stdout=subprocess.PIPE)
         output = fib.stdout.read().strip()
-        referenceOutput = "2"
+        referenceOutput = b"2"
         self.assertEqual(output, referenceOutput)
         fib.terminate()
 
@@ -61,6 +61,6 @@ class TestDiff(unittest.TestCase):
         """4th Fibonacci number"""
         fib = subprocess.Popen(["./fib", "4"], stdout=subprocess.PIPE)
         output = fib.stdout.read().strip()
-        referenceOutput = "3"
+        referenceOutput = b"3"
         self.assertEqual(output, referenceOutput)
         fib.terminate()
