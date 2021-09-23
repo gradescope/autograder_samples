@@ -9,4 +9,5 @@ if __name__ == '__main__':
         klass = build_test_class(name)
         suite.addTest(klass(TestMetaclass.test_name(name)))
 
-    JSONTestRunner(visibility='visible').run(suite)
+    with open('/autograder/results/results.json', 'w') as f:
+        JSONTestRunner(visibility='visible', stream=f).run(suite)
