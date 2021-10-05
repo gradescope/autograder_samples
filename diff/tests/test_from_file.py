@@ -12,7 +12,7 @@ class TestDiff(unittest.TestCase):
         """10th Fibonacci number"""
         fib = subprocess.Popen(["./fib", "10"], stdout=subprocess.PIPE)
         output = fib.stdout.read().strip()
-        with open("reference/10", "r") as outputFile:
+        with open("reference/10", "rb") as outputFile:
             referenceOutput = outputFile.read()
 
         self.assertEqual(output, referenceOutput)

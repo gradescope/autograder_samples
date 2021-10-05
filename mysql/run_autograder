@@ -8,4 +8,4 @@ cp /autograder/submission/queries.py /autograder/source/queries.py
 
 cd /autograder/source
 
-python run_tests.py > /autograder/results/results.json
+python3 run_tests.py

@@ -8,4 +8,4 @@ cd /autograder/source
 
 make fib
 
-python run_tests.py > /autograder/results/results.json
+python3 run_tests.py

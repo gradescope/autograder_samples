@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-apt-get install -y python python-pip python-dev mysql-server
+apt-get install -y python3 python3-pip python3-dev mysql-server
 
-pip install -r /autograder/source/requirements.txt
+pip3 install -r /autograder/source/requirements.txt
 
 # Start MySQL server
 # will need to start again in run_autograder (this is just for importing data)

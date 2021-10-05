@@ -26,7 +26,7 @@ class TestMetaclass(type):
         def load_test_file(path):
             full_path = os.path.join(BASE_DIR, dir_name, path)
             if os.path.isfile(full_path):
-                with open(full_path) as f:
+                with open(full_path, 'rb') as f:
                     return f.read()
             return None
 
