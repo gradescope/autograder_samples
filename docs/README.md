@@ -53,6 +53,22 @@ forum](https://github.com/gradescope/autograder_samples/discussions)
 for this project, especially if there is no private information in
 your question.
 
+Issues regarding setup or installation of packages are often not
+Gradescope specific. In general, information about installing packages
+on our base operating system (currently Ubuntu 18.04 by default) will
+be relevant to Gradescope. If you get errors during your autograder
+setup phase it may help to search for those errors on Google or Stack
+Overflow.
+
+Given the multitude of software packages that are in use on the
+Gradescope autograder platform, the Gradescope team is not intimately
+familiar with each package's setup and configuration. When trying to
+install or use packages, it is a good idea to check the package's
+installation instructions or source code repository for any tips on
+installing on Ubuntu 18.04, or instructions on configuration and
+usage. It is also helpful to contact the authors of such packages when
+possible because they will be more familiar with their own code.
+
 # Pricing
 
 The autograder platform is available with paid school site licenses
