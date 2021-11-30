@@ -12,7 +12,7 @@ An example of what gradescope wants:
             "number": "1.1", // optional (will just be numbered in order of array if no number given)
             "output": "Giant multiline string that will be placed in a <pre> tag and collapsed by default", // optional
             "tags": ["tag1", "tag2", "tag3"], // optional
-            visibility: "always" // can be "always", "published", or "never" -- default "always"
+            "visibility": "visible" // can be "visible", "after_published", "after_due_date", or "hidden" -- default "visible"
         },
         {
             "score": 1.0, // optional, but required if not on top level submission
