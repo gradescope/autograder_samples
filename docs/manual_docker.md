@@ -12,10 +12,17 @@ script, the results should be in `/autograder/results/results.json` with the
 correct formatting.
 
 Any setup can be done in the Dockerfile, so there is no need for a `setup.sh`
-script.
+script. You can use one if it's easier though.
 
 Beyond this, there are no other requirements on the structure of your Docker
 image, so you can organize it as you wish.
+
+If you're just getting started, you can look at [our sample Dockerfile](https://github.com/gradescope/autograder_samples/tree/master/manual_docker).
+This example puts all the autograder source in a `source` directory and uses a
+`setup.sh` file similar to the zip file upload method, so it can be a good
+transition path for going from a zip file to fully custom Docker builds.
+
+You may also wish to refer to the [Dockerfile reference docs](https://docs.docker.com/engine/reference/builder/).
 
 ## Private Docker Hub Repositories
 
