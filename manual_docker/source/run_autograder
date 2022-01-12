@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+/usr/games/cowsay "Hello, world!"
+
+files_submitted=$(ls /autograder/submission)
+num_files_submitted=$(ls /autograder/submission/ | wc -l)
+
+cat > /autograder/results/results.json <<EOF
+{
+  "output": "Good job, you passed! Submitted ${num_files_submitted} files: ${files_submitted}",
+  "score": 10,
+  "max_score": 10
+}
+EOF
