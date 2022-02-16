@@ -6,11 +6,11 @@
 
 If you see the word 'Killed' at the end of your autograder run, and it gets
 terminated abruptly, this likely means that your autograder was terminated due
-to exceeding the default memory limit for a single container. Our default memory
-limit is 384MB, but you can increase this from the "Advanced Settings" section
+to exceeding the memory limit for a single container. Our default memory
+limit is 768MB, but you can increase this from the "Autograder Settings" section
 of the settings for your assignment.
 
-[![Advanced Settings](advanced_settings.png)](advanced_settings.png)
+[![Autograder Settings](autograder_settings.png){: style="width:595px;"}](autograder_settings.png)
 
 ### Your submission timed out
 
@@ -25,18 +25,18 @@ and, they won't see which tests were able to run successfully.
 You can increase the timeout for your assignment on the assignment's settings
 page, up to a maximum of 40 minutes. We don't recommend increasing it beyond
 what you expect to need, because for submissions that don't terminate it will
-just take that much longer to for the autograder to time out. Ideally, we would
-recommend adding your own timeouts to individual test cases so that a mistake in
-one test case does not cause a student to get a 0 overall.
+just take that much longer for the autograder to time out.
 
 Keep in mind that on our autograder cluster, multiple tasks are running
-concurrently. By default, each autograder is allocated 1/4 of a virtual CPU, so
+concurrently. By default, each autograder is allocated 1/2 of a virtual CPU, so
 you should adjust your running time expectations accordingly. The easiest way to
-do this is to simply time how long your solution code takes to run.
+do this is to time how long your solution code takes to run.
 
-If you need a longer timeout, let us know and we may potentially increase the
-global timeout for your assignment. You can also increase the CPU allocation if
-it's a CPU-intensive assignment, under "Advanced Settings".
+You can also increase the CPU allocation if it's a CPU-intensive assignment, under
+"Autograder Settings". Note that to take advantage of multiple CPUs, you will need
+to write your autograder to use multiple processes or threads; Gradescope cannot
+automaticaly parallelize your tests. If your testing framework has parallel test
+running capabilities that may help though!
 
 ### The autograder failed to execute correctly
 
@@ -57,5 +57,4 @@ it's not ideal because any print statements will break the JSON structure.
 
 If you have any further questions, feel free to contact us
 at [help@gradescope.com](mailto:help@gradescope.com). Please mention Autograder
-in the subject line, it'll help us automatically categorize the type of support
-request.
+in the subject line, it'll help us categorize the type of support request.
