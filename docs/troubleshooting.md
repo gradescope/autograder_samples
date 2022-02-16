@@ -59,5 +59,4 @@ it's not ideal because any print statements will break the JSON structure.
 
 If you have any further questions, feel free to contact us
 at [help@gradescope.com](mailto:help@gradescope.com). Please mention Autograder
-in the subject line, it'll help us automatically categorize the type of support
-request.
+in the subject line, it'll help us categorize the type of support request.
