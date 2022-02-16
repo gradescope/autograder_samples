@@ -29,3 +29,4 @@ pages:
 - 'Community Resources': resources.md
 markdown_extensions:
   - admonition
+  - attr_list

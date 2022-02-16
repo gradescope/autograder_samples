@@ -10,9 +10,7 @@ to exceeding the memory limit for a single container. Our default memory
 limit is 768MB, but you can increase this from the "Advanced Settings" section
 of the settings for your assignment.
 
-<a href="../advanced_settings.png">
-  <img src="../advanced_settings.png" width="595px" alt="Autograder Settings" />
-</a>
+[![Advanced Settings](advanced_settings.png){: style="width:595px;"}](advanced_settings.png)
 
 ### Your submission timed out
 
