@@ -7,10 +7,10 @@
 If you see the word 'Killed' at the end of your autograder run, and it gets
 terminated abruptly, this likely means that your autograder was terminated due
 to exceeding the memory limit for a single container. Our default memory
-limit is 768MB, but you can increase this from the "Advanced Settings" section
+limit is 768MB, but you can increase this from the "Autograder Settings" section
 of the settings for your assignment.
 
-[![Advanced Settings](advanced_settings.png){: style="width:595px;"}](advanced_settings.png)
+[![Autograder Settings](autograder_settings.png){: style="width:595px;"}](autograder_settings.png)
 
 ### Your submission timed out
 
@@ -33,7 +33,7 @@ you should adjust your running time expectations accordingly. The easiest way to
 do this is to time how long your solution code takes to run.
 
 You can also increase the CPU allocation if it's a CPU-intensive assignment, under
-"Advanced Settings". Note that to take advantage of multiple CPUs, you will need
+"Autograder Settings". Note that to take advantage of multiple CPUs, you will need
 to write your autograder to use multiple processes or threads; Gradescope cannot
 automaticaly parallelize your tests. If your testing framework has parallel test
 running capabilities that may help though!
