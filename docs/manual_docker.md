@@ -36,25 +36,22 @@ To run your autograder image locally, you will currently need to bypass our
 autograder harness because otherwise it will try to communicate with Gradescope
 by default. You can do this by mounting a sample submission into the
 `/autograder/submission` directory and then running `/autograder/run_autograder`
-directly. Here's an example command; replace the path to the submission and
-Docker image name with the appropriate values.
+directly. Here's an example command; replace the path to the submission, results
+directory, and Docker image name with the appropriate values.
 
 ```bash
-docker run --rm -v /path/to/submission:/autograder/submission username/image_name:tag bash -c "mkdir /autograder/results && /autograder/run_autograder && cat /autograder/results/results.json"
+docker run --rm -v /path/to/submission:/autograder/submission -v /path/to/results:/autograder/results username/image_name:tag /autograder/run_autograder && cat /path/to/results/results.json
 ```
 
 or to start an interactive session:
 
 ```bash
-docker run --rm -it -v /path/to/submission:/autograder/submission username/image_name:tag bash
+docker run --rm -it -v /path/to/submission:/autograder/submission -v /path/to/results:/autograder/results username/image_name:tag bash
 ```
 
 Minor notes:
 
 - `--rm` is added to clean up the container after it exits. You can remove it if
   you want to inspect container logs or state afterwards.
-- The `/autograder/results` directory is ordinarily created by the harness, so
-  that's why you need to mkdir it. When running an interactive bash session you
-  will need to create it too.
-- In the first example, we're using `bash -c "..."` to run multiple commands in
-  one Docker command and then show the results.
+- The `/autograder/results` directory should be mounted to a path on your host
+  so that you can inspect the results.json file that your autograder produces.
