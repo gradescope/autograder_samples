@@ -15,7 +15,7 @@ custom version numbers are appended to the upstream
 kernel number with a dash or some other delimiter.
 ```
 
-We have temporarily worked around this issue by building a new version of our base image. This should resolve the issue for now, until a more permanent fix is released by the Ubuntu team.
+We have temporarily worked around this issue by building a new version of our base image. This should resolve the issue for now, until a more permanent fix is released by the Ubuntu team. Affected users will need to reupload their autograder zip file to successfully update their autograder image.
 
 ## September 4th, 2020
 
