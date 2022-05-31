@@ -3,12 +3,14 @@
 [View project source on Github](https://github.com/gradescope/autograder_samples/tree/master/java)
 
 This example shows how to set up an autograder on Gradescope for a
-Java project. It uses JUnit, JDK11, and Josh Hug's jh61b library for
-producing output in JSON format.
+Java project. It uses JUnit, JDK11, and UC Berkeley CS61B's jh61b
+library for producing output in JSON format.
 
-## Alternatives
-
-You may want to check out [JGrade](https://github.com/tkutche1/jgrade), a library created by JHU instructors, which is more actively maintained.
+!!! warning "Warning"
+    This example was provided by an early instructor user of the autograder
+    platform and is not actively maintained. It may not support all current
+    autograder platform functionality. See our
+    [Community Resources page](/resources/) for alternative Java resources.
 
 ## Project Description
 
