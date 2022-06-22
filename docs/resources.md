@@ -24,3 +24,4 @@ Name | Description
 [SQLite3 with Gradescope](https://github.com/scotpatti/SQLiteAutograder) | A lightweight autograder for SQLite3. Handles multiple queries and returns the number right as the grade. Running six complex queries, students usually receive their grades in 6-10 seconds. 
 [Racket with Gradescope](https://github.com/shriram/gradescope-racket) | An auto-grader for [Racket](https://racket-lang.org/)
 [UoL Autograder](https://uol-autograder.readthedocs.io/en/latest/) | University of Leeds autograder for C++ and Python
+[Tufts C/C++ Gradescope Autograder](https://gitlab.cs.tufts.edu/mrussell/gradescope-autograding) | A customizable C/C++ Autograder that integrates with Gradescope, along with instructions and scripts for custom container building and git integration.
