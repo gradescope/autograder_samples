@@ -4,7 +4,7 @@ Here are some updates we've made to our autograder platform. If you have any que
 
 ## July 13th, 2022
 
-We have now added the ability to set the base image you want your autograder to build with via our front end app. This means you are no longer required to build your own docker container and use the manual docker configuration for zip file autograders which just needed a different base image. You can find more about it [here](base_image)
+We have added the ability to set the base image you want your autograder to build with. This means you are no longer required to build your own Docker container and use the manual docker configuration for zip file autograders which need a different base image. You can [find out more about base images here](base_images).
 
 ## March 17th, 2022
 
