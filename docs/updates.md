@@ -2,6 +2,10 @@
 
 Here are some updates we've made to our autograder platform. If you have any questions or issues with any of these changes, please email [help@gradescope.com](mailto:help@gradescope.com).
 
+## July 13th, 2022
+
+We have now added the ability to set the base image you want your autograder to build with via our front end app. This means you are no longer required to build your own docker container and use the manual docker configuration for zip file autograders which just needed a different base image. You can find more about it [here](base_image)
+
 ## March 17th, 2022
 
 An upstream update to our underlying host OS introduced a conflict with the default Ubuntu 18.04 base image used for building autograders. For users installing certain packages that depend on glibc, this may have manifested in the build error below:
