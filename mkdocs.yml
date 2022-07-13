@@ -10,6 +10,7 @@ pages:
 - 'Autograder Specifications': specs.md
 - 'Manual Grading': manual_grading.md
 - 'Technical Details': tech.md
+- 'Base Images': base_images.md
 - 'Debugging via SSH': ssh.md
 - 'Troubleshooting': troubleshooting.md
 - 'Python 3 Issues': python3_issues.md
