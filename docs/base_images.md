@@ -1,27 +1,45 @@
 # Base Images
 
-Gradescope support selecting a different base image to build your autograder with.
+Gradescope supports selecting a different base image to build your
+autograder with.
 
 [![Base Image Selector](base_image_selector.png)](base_image_selector.png)
 
-When you create a new autograder, it will default to the default base image. It is strongly recommend that you update your autograders to use the latest versions of the OS's which are supplied due to software deprecation and security updates on older versions of the OS.
+When you create a new autograder, it will default to the current
+default base image. Over time, new base image versions may be released
+and become the default version. We recommend that you update your
+autograders to use the latest versions when available to take
+advantage of the latest software updates and security features.
 
-Rebuilding an autograder or duplicating an autograder will use the same base image as was selected last.
+Rebuilding an autograder or duplicating an autograder will use the
+same base image as was previously selected.
 
-## Base Image Selectors
+## Base Image Options
 
 ### Base Image OS
 
-This is the operating system which the base image is running (E.g. Ubuntu)
+This is the operating system which the base image is running
+(e.g. Ubuntu, Fedora, etc).
 
 ### Base Image Version
 
-This is the version of the OS which is loaded in the base image (E.g. 18.04 for Ubuntu)
+This is the major version of the OS which is loaded in the base image
+(E.g. 18.04 for Ubuntu). Note that minor software upgrades may happen
+from time to time without changing the major version of the OS
+(i.e. individual packages may receive minor updates while keeping the
+same version of the OS). This is up to the upstream OS maintainers'
+software upgrade policies.
 
 ### Base Image Variant
 
-This is to select pre-installed software in the base image to improve build time.
+Variants may add to or modify the pre-installed software in the base
+image. This can be used to improve autograder build times by avoiding
+installing packages in the setup phase.
 
-Selecting *Base* will mean that it is a fresh install of the OS with no modifications to the default installed programs.
+Selecting *Base* will mean that it is a fresh install of the OS with
+no modifications to the default installed programs, other than what
+our autograder platform requires.
 
-Additional base images will be added which contain commly installed programs such as later versions of Python on older base images or Java on a base image. This should decrease the build time for those autograders.
+Additional base images may be added which contain commonly installed
+packages, such as different versions of Python or Java. This should
+decrease the build time for those autograders.
