@@ -1,4 +1,4 @@
-# Base Image
+# Base Images
 
 Gradescope support selecting a different base image to build your autograder with.
 
