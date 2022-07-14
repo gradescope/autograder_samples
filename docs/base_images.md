@@ -1,12 +1,17 @@
 # Base Images
 
+The default base image that we use is Ubuntu 18.04.
+You'll see this default auto-selected on the Configure Autograder page.
 Gradescope supports selecting a different base image to build your
 autograder with.
 
 [![Base Image Selector](base_image_selector.png)](base_image_selector.png)
 
 When you create a new autograder, it will default to the current
-default base image. Over time, new base image versions may be released
+default base image. If you do not want to change the default base image,
+you can upload your autograder Zip file and select "Update Autograder"
+on the Configure Autograder page of your Gradescope assignment. Over
+time, new base image versions may be released
 and become the default version. We recommend that you update your
 autograders to use the latest versions when available to take
 advantage of the latest software updates and security features.
