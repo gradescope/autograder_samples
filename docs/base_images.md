@@ -1,6 +1,8 @@
 # Base Images
 
-The default base image that we use is Ubuntu 18.04.
+The default base image that we use is currently Ubuntu 22.04.
+The previous default version was Ubuntu 18.04.
+
 You'll see this default auto-selected on the Configure Autograder page.
 Gradescope supports selecting a different base image to build your
 autograder with.
