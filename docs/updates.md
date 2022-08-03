@@ -2,6 +2,12 @@
 
 Here are some updates we've made to our autograder platform. If you have any questions or issues with any of these changes, please email [help@gradescope.com](mailto:help@gradescope.com).
 
+## Aug 3rd, 2022
+
+We have updated the default autograder base image to Ubuntu 22.04, the current LTS release of Ubuntu. This will make newer versions of packages available to install.
+
+If you experience any issues, such as autograders failing to build or failing to execute, you can revert to the previous version, which is Ubuntu 18.04. See [our documentation about base images here](base_images).
+
 ## July 13th, 2022
 
 We have added the ability to set the base image you want your autograder to build with. This means you are no longer required to build your own Docker container and use the manual docker configuration for zip file autograders which need a different base image. You can [find out more about base images here](base_images).
