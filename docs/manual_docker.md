@@ -2,7 +2,7 @@
 
 To use the "Manual Docker Configuration" option, you'll need to use
 `gradescope/autograder-base` as the base image for your docker image.
-You can also use the tags `fedora` or `rocky-8`, or different versions of
+You can also other operating systems such as `fedora`, or different versions of
 Ubuntu - see the complete list [on DockerHub](https://hub.docker.com/r/gradescope/autograder-base/tags/).
 
 Note: You can now also
