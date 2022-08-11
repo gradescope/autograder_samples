@@ -31,7 +31,7 @@ This is the operating system which the base image is running
 ### Base Image Version
 
 This is the major version of the OS which is loaded in the base image
-(E.g. 18.04 for Ubuntu). Note that minor software upgrades may happen
+(E.g. 22.04 for Ubuntu). Note that minor software upgrades may happen
 from time to time without changing the major version of the OS
 (i.e. individual packages may receive minor updates while keeping the
 same version of the OS). This is up to the upstream OS maintainers'

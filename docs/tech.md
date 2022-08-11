@@ -6,7 +6,7 @@ not familiar with Docker, think of it as a lightweight virtual
 machine. Each container is isolated from others, and you can install
 anything you want inside the container.
 
-The image is based on **Ubuntu 18.04**, so packages can be installed with
+The image is based on **Ubuntu**, so packages can be installed with
 apt, or from source or other means. The image is built once when you
 set up your assignment, and each time students submit a new instance
 of that image is spun up. 
