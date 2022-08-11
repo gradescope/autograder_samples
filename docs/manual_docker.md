@@ -1,9 +1,9 @@
 # Manual Docker Configuration
 
 To use the "Manual Docker Configuration" option, you'll need to use
-`gradescope/auto-builds` as the base image for your docker image.
-You can also use the tags `fedora` or `centos`, or different versions of
-Ubuntu - see the complete list [on DockerHub](https://hub.docker.com/r/gradescope/auto-builds/tags/).
+`gradescope/autograder-base` as the base image for your docker image.
+You can also use the tags `fedora` or `rocky-8`, or different versions of
+Ubuntu - see the complete list [on DockerHub](https://hub.docker.com/r/gradescope/autograder-base/tags/).
 
 Note: You can now also
 [use different base images with a zip file upload](base_images).
