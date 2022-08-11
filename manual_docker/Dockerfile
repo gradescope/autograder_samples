@@ -6,10 +6,6 @@ ARG TAG=latest
 
 FROM ${BASE_REPO}:${TAG}
 
-RUN apt-get update && \
-    apt-get install -y dos2unix && \
-    apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
 ADD source /autograder/source
 
 RUN cp /autograder/source/run_autograder /autograder/run_autograder
