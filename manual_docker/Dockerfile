@@ -1,7 +1,7 @@
 # You can change these variables to use a different base image, but
 # you must ensure that your base image inherits from one of ours.
 # You can also override these at build time with --build-arg flags
-ARG BASE_REPO=gradescope/auto-builds
+ARG BASE_REPO=gradescope/autograder-base
 ARG TAG=latest
 
 FROM ${BASE_REPO}:${TAG}
