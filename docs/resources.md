@@ -15,6 +15,7 @@ Name | Description
 [bralax/gradescope_autograder](https://github.com/bralax/gradescope_autograder) | Another Java helper library designed for lower level courses with closer acceess to student code.
 [UCSB Gradescope Tools](https://ucsb-gradescope-tools.github.io/) | Tools and examples for C++ and Python autograders, pulling from GitHub, etc
 [GradescopeGrader4Autolab](https://github.com/xyzisinus/GradescopeGrader4Autolab) | A wrapper autograder to help port Autolab autograders to Gradescope
+[ThaumicMekanism/GradescopeBase](https://github.com/ThaumicMekanism/GradescopeBase) | An alternative Python autograder framework ([usage example](https://github.com/ThaumicMekanism/GradescopeBaseAG))
 [mnoukhov/gradescope-autograder-template](https://github.com/mnoukhov/gradescope-autograder-template) | An autograder template for Python autograders
 [C++ Configurable Autograder Sample](https://github.com/UgiR/gradescope-autograde-cpp) | Configurable autograder template with C++ tooling
 [R autograder](https://github.com/guerzh/r_autograde_gradescope) | A sample Gradescope-compatible autograder for R scripts
