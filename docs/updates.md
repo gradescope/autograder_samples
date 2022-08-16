@@ -2,6 +2,10 @@
 
 Here are some updates we've made to our autograder platform. If you have any questions or issues with any of these changes, please email [help@gradescope.com](mailto:help@gradescope.com).
 
+## Aug 16th, 2022
+
+We have added the ability to specify whether a test case should be considered to have passed or failed, overriding the default styling. See [our documentation on the results.json format](specs#test-case-status) to learn more.
+
 ## Aug 3rd, 2022
 
 We have updated the default autograder base image to Ubuntu 22.04, the current LTS release of Ubuntu. This will make newer versions of packages available to install.

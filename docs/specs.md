@@ -48,6 +48,7 @@ Your autograder's output should be in the file results.json, in the following fo
         {
             "score": 2.0, // optional, but required if not on top level submission
             "max_score": 2.0, // optional
+            "status": "passed", // optional, see "Test case status" below
             "name": "Your name here", // optional
             "number": "1.1", // optional (will just be numbered in order of array if no number given)
             "output": "Giant multiline string that will be placed in a <pre> tag and collapsed by default", // optional
@@ -108,6 +109,16 @@ students by adding a top-level `"stdout_visibility"` key to your JSON. The value
 should be one of `hidden`, `after_due_date`, `after_published`, or `visible`,
 depending on when you want stdout to be visible to students. These options
 mirror the test case visibility options described above.
+
+
+### Test case status
+
+The `"status"` field on a test case can be used to customize the test case's
+appearance. By default, test cases where the students were awarded the
+`"max_score"` points are marked as passing, and tests where they achieved a
+score lower than the max are considered failing. To override this, you can set
+the `"status"` field to either `"passed"` or `"failed"` to mark the test as
+passing or failing respectively.
 
 ### Leaderboards
 
