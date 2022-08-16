@@ -1,5 +1,11 @@
 # Getting Started
 
+## Video Walkthrough
+
+If you'd like to watch a video walkthrough of the programming assignment setup
+process, please see our [Gradescope for Programming Assignments
+webinar](https://www.youtube.com/watch?v=fjvNb9jxK9Q){:target="_blank" rel="noopener"}.
+
 ## Pre-requisites
 
 If you haven't made an account on Gradescope, sign up as an instructor at
