@@ -26,3 +26,4 @@ Name | Description
 [Racket with Gradescope](https://github.com/shriram/gradescope-racket) | An auto-grader for [Racket](https://racket-lang.org/)
 [UoL Autograder](https://uol-autograder.readthedocs.io/en/latest/) | University of Leeds autograder for C++ and Python
 [Tufts C/C++ Gradescope Autograder](https://gitlab.cs.tufts.edu/mrussell/gradescope-autograding) | A customizable C/C++ Autograder that integrates with Gradescope, along with instructions and scripts for custom container building and git integration.
+[Excel workbook autograder](https://github.com/roleohibachi/excel-autograder) | Using the "programming assignment" format to autograde a non-programming assignment in Excel format.
