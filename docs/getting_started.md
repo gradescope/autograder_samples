@@ -24,7 +24,7 @@ the appropriate options and continue.
 [![Assignment](assignment_form.png)](assignment_form.png)
 
 Next you'll be asked to upload your autograder. Upload a zip file
-meeting the required [specifications](specs), select the [base image](base_image)
+meeting the required [specifications](../specs), select the [base image](../base_images)
 you would like to build the autograder with, and press "Update Autograder."
 
 [![Configure Autograder](configure_autograder.png)](configure_autograder.png)
