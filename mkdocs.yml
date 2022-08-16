@@ -3,7 +3,7 @@ repo_url: https://github.com/gradescope/autograder_samples
 docs_dir: docs
 theme: readthedocs
 extra_css: [gradescope.css]
-nav:
+pages:
 - 'Home': index.md
 - 'Updates': updates.md
 - 'Getting Started': getting_started.md
