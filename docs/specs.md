@@ -114,11 +114,36 @@ mirror the test case visibility options described above.
 ### Test case status
 
 The `"status"` field on a test case can be used to customize the test case's
-appearance. By default, test cases where the students were awarded the
+appearance. By default, test cases where the student was awarded the
 `"max_score"` points are marked as passing, and tests where they achieved a
 score lower than the max are considered failing. To override this, you can set
 the `"status"` field to either `"passed"` or `"failed"` to mark the test as
-passing or failing respectively.
+passing or failing respectively. You can omit score information to add test
+cases that serve as informational checks with a passing or failing status. See
+an example below:
+
+```json
+{
+  "tests": [
+    {
+      "name": "Compilation check",
+      "status": "passed"
+    },
+    {
+      "name": "Style check",
+      "status": "failed"
+    },
+    {
+      "name": "Test 3",
+      "score": 5,
+      "max_score": 10,
+      "status": "passed"
+    }
+  ]
+}
+```
+
+[<img src="../test_status.png" width="1253px" />](test_status.png)
 
 ### Leaderboards
 
