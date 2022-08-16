@@ -5,7 +5,7 @@
 If you haven't made an account on Gradescope, sign up as an instructor at
 [Gradescope.com](https://gradescope.com/).
 
-Programming assignments are part of [Gradescope Complete](https://gradescope.com/pricing),
+Programming assignments are part of [Gradescope Complete](https://info.gradescope.com/pricing),
 so you'll need to either upgrade your course, or request trial access to the feature by
 emailing [help@gradescope.com](mailto:help@gradescope.com).
 
