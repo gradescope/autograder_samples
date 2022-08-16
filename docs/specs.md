@@ -149,3 +149,9 @@ an example below:
 
 You can add a "leaderboard" section to create leaderboards for your
 assignment. You can [read more about leaderboards here](https://gradescope-autograders.readthedocs.io/en/latest/leaderboards/).
+
+## Video Walkthrough
+
+If you'd like to watch a video walkthrough of the programming assignment setup
+process, please see our [Gradescope for Programming Assignments
+webinar](https://www.youtube.com/watch?v=fjvNb9jxK9Q){:target="_blank" rel="noopener"}.
