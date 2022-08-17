@@ -27,6 +27,7 @@ nav:
     - 'General output-checking autograder': diff_general.md
     - 'Native code via Python': diff.md
     - 'MySQL': mysql.md
+    - 'Python autograder for code in another language': python_other_language.md
 - 'Community Resources': resources.md
 markdown_extensions:
   - admonition
