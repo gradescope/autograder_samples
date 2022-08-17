@@ -26,7 +26,7 @@ line breaks in a public key.
 
 Once you have added one SSH key, you can add more keys or change
 existing keys by going to the
-[Account settings](https://gradescope.com/account/edit) page.
+[Account settings](https://www.gradescope.com/account/edit) page.
 
 Your public keys will appear at the bottom of the page.
 

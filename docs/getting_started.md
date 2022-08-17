@@ -1,11 +1,17 @@
 # Getting Started
 
+## Video Walkthrough
+
+If you'd like to watch a video walkthrough of the programming assignment and
+code autograder setup process, please see our
+[Gradescope for Programming Assignments webinar](https://www.youtube.com/watch?v=fjvNb9jxK9Q){:target="_blank" rel="noopener"}.
+
 ## Pre-requisites
 
 If you haven't made an account on Gradescope, sign up as an instructor at
 [Gradescope.com](https://gradescope.com/).
 
-Programming assignments are part of [Gradescope Complete](https://gradescope.com/pricing),
+Programming assignments are part of [Gradescope Complete](https://info.gradescope.com/pricing),
 so you'll need to either upgrade your course, or request trial access to the feature by
 emailing [help@gradescope.com](mailto:help@gradescope.com).
 
@@ -24,7 +30,7 @@ the appropriate options and continue.
 [![Assignment](assignment_form.png)](assignment_form.png)
 
 Next you'll be asked to upload your autograder. Upload a zip file
-meeting the required [specifications](specs), select the [base image](base_image)
+meeting the required [specifications](../specs), select the [base image](../base_images)
 you would like to build the autograder with, and press "Update Autograder."
 
 [![Configure Autograder](configure_autograder.png)](configure_autograder.png)
