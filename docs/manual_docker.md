@@ -6,11 +6,11 @@ You can also other operating systems such as `fedora`, or different versions of
 Ubuntu - see the complete list [on DockerHub](https://hub.docker.com/r/gradescope/autograder-base/tags/).
 
 Note: You can now also
-[use different base images with a zip file upload](../base_images).
+[use different base images with a zip file upload](base_images).
 
 You'll need to ensure that your image contains the `run_autograder` script at
 the path `/autograder/run_autograder`. This should match the requirements
-described on the [specifications](../specs) page. In particular, at the end of the
+described on the [specifications](specs) page. In particular, at the end of the
 script, the results should be in `/autograder/results/results.json` with the
 correct formatting.
 
