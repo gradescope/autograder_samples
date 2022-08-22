@@ -2,6 +2,10 @@
 
 Here are some updates we've made to our autograder platform. If you have any questions or issues with any of these changes, please email [help@gradescope.com](mailto:help@gradescope.com).
 
+## Aug 22nd, 2022
+
+We have added the Fedora 36 and Rocky 8 base images.
+
 ## Aug 16th, 2022
 
 We have added the ability to specify whether a test case should be considered to have passed or failed, overriding the default styling. See [our documentation on the results.json format](../specs#test-case-status) to learn more.
