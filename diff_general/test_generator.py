@@ -3,7 +3,7 @@ import os
 import os.path
 import subprocess32 as subprocess
 from subprocess32 import PIPE
-from gradescope_utils.autograder_utils.decorators import weight
+from gradescope_utils.autograder_utils.decorators import weight, visibility
 import yaml
 
 BASE_DIR = './test_data'
@@ -41,6 +41,7 @@ class TestMetaclass(type):
         settings = load_settings()
 
         @weight(settings.get('weight', 1))
+        @visibility(settings.get('visibility', 'visible'))
         def fn(self):
             proc = subprocess.Popen(command, stdin=PIPE, stdout=PIPE, stderr=PIPE)
             stdin = load_test_file('input')
