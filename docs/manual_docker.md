@@ -8,7 +8,7 @@ Gradescope, but it is available as an advanced feature.
 
 !!! note "Docker documentation"
     The rest of this page assumes familiarity with the Docker platform,
-    including building a Docker image and pushing it to a Docker image
+    including building a Docker image and pushing it to a container
     registry such as DockerHub. For more information, please see the
     [official Docker documentation](https://docs.docker.com).
 
