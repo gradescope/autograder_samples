@@ -1,10 +1,10 @@
 # Manual Docker Configuration
 
-If you are familiar with Docker and want more control, you can build your own
-Docker image instead of having Gradescope build your container image from a zip
-file. This will also allow you to take advantage of local Docker build caching
-to speed up build times. It is not necessary to use this option to run
-your autograders on Gradescope, but it is available as an advanced feature.
+If you are familiar with Docker, you can build your own Docker image instead of
+having Gradescope build your container image from a zip file. This can provide
+more control and speed up build times by taking advantage of local Docker build
+caching. It is not necessary to use this option to run your autograders on
+Gradescope, but it is available as an advanced feature.
 
 !!! note "Docker documentation"
     The rest of this page assumes familiarity with the Docker platform,
