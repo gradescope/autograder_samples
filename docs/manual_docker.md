@@ -14,6 +14,8 @@ who are familiar with the underlying container technology.
     registry such as DockerHub. For more information, please see the
     [official Docker documentation](https://docs.docker.com).
 
+## Requirements
+
 To use the "Manual Docker Configuration" option, you'll need to use
 `gradescope/autograder-base` as the base image for your docker image.
 You can also other operating systems such as `fedora`, or different versions of
