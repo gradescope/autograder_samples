@@ -152,7 +152,7 @@ an example below:
 
 ### Output String Formatting
 
-You can now add rich formatting to your autograder output to further
+You can add rich formatting to your autograder output to further
 customize your autograder experience for students.
 
 
