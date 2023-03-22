@@ -164,8 +164,9 @@ and outputs. No html, markdown, or ansi will be rendered.
 * `"simple_format"` (default for top level output) - This is very
 similar to the `"html"` format option but will also convert `\n`
 into `<br />` and `\n\n+` into a page break.
-* `"html"` - This will render html in your output. Note that we sanitize out
-so you may not be able to use all of the normal html elements!
+* `"html"` - This will render html in your output. Note that we sanitize the
+output so you may not be able to use all html elements! Additionally, not all
+tags will be styled out of the box.
 * `"md"` - This will render some basic markdown in your output.
 * `"ansi"` - This will render ansi colors similar to how the stdout renders them.
 ### Leaderboards
