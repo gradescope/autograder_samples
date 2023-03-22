@@ -1,7 +1,21 @@
 # Manual Docker Configuration
 
+If you are familiar with Docker, you can build your own Docker image instead of
+having Gradescope build your container image from a zip file. This can provide
+more control and speed up build times by taking advantage of local Docker build
+caching. It is not necessary to use this option to run your autograders on
+Gradescope, but it is available as an advanced feature.
+
+!!! note "Docker documentation"
+    The rest of this page assumes familiarity with the Docker platform,
+    including building a Docker image and pushing it to a container
+    registry such as DockerHub. For more information, please see the
+    [official Docker documentation](https://docs.docker.com).
+
+## Requirements
+
 To use the "Manual Docker Configuration" option, you'll need to use
-`gradescope/autograder-base` as the base image for your docker image.
+`gradescope/autograder-base` as the base image for your Docker image.
 You can also other operating systems such as `fedora`, or different versions of
 Ubuntu - see the complete list [on DockerHub](https://hub.docker.com/r/gradescope/autograder-base/tags/).
 

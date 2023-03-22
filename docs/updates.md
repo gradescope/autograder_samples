@@ -4,7 +4,16 @@ Here are some updates we've made to our autograder platform. If you have any que
 
 ## Mar 22th, 2022
 
-We have added rich formatting options to the autograder output! See [our documentation on the formatting options here](../specs#output-string-formatting)
+We have added rich formatting options to the autograder output!
+See [our documentation on the formatting options here](../specs#output-string-formatting) for more information.
+## Nov 8th, 2022
+
+We have upgraded `openssl` to 3.0.2-0ubuntu1.7 on Ubuntu 22.04 autograder base images.
+See [https://ubuntu.com/security/notices/USN-5710-1](https://ubuntu.com/security/notices/USN-5710-1) for more information.
+
+## Aug 22nd, 2022
+
+We have added the Fedora 36 and Rocky 8 base images.
 
 ## Aug 16th, 2022
 
