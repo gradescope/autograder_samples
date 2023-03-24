@@ -169,6 +169,7 @@ similar to the `"html"` format option but will also convert `\n`
 into `<br />` and `\n\n+` into a page break.
 * `"md"` - This will render some basic markdown in your output.
 * `"ansi"` - This will render ansi colors similar to how the stdout renders them.
+
 ### Leaderboards
 
 You can add a "leaderboard" section to create leaderboards for your
