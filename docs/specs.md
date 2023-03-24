@@ -167,8 +167,8 @@ tags will be styled out of the box.
 * `"simple_format"` (default for top-level output) - This is very
 similar to the `"html"` format option but will also convert `\n`
 into `<br />` and `\n\n+` into a page break.
-* `"md"` - This will render some basic markdown in your output.
-* `"ansi"` - This will render ansi colors similar to how the stdout renders them.
+* `"md"` - This will render some basic Markdown in your output.
+* `"ansi"` - This will render ANSI colors similar to how the stdout renders them.
 
 ### Leaderboards
 
