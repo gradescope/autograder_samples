@@ -40,6 +40,9 @@ Your autograder's output should be in the file results.json, in the following fo
 { "score": 44.0, // optional, but required if not on each test case below. Overrides total of tests if specified.
   "execution_time": 136, // optional, seconds
   "output": "Text relevant to the entire submission", // optional
+  "output_format": "simple_format", // Optional output format settings, see "Output String Formatting" below
+  "test_output_format": "text", // Optional default output format for test case outputs, see "Output String Formatting" below
+  "test_name_format": "text", // Optional default output format for test case names, see "Output String Formatting" below
   "visibility": "after_due_date", // Optional visibility setting
   "stdout_visibility": "visible", // Optional stdout visibility setting
   "extra_data": {}, // Optional extra data to be stored
@@ -50,8 +53,10 @@ Your autograder's output should be in the file results.json, in the following fo
             "max_score": 2.0, // optional
             "status": "passed", // optional, see "Test case status" below
             "name": "Your name here", // optional
+            "name_format": "text", // optional formatting for the test case name, see "Output String Formatting" below
             "number": "1.1", // optional (will just be numbered in order of array if no number given)
             "output": "Giant multiline string that will be placed in a <pre> tag and collapsed by default", // optional
+            "output_format": "text", // optional formatting for the test case output, see "Output String Formatting" below
             "tags": ["tag1", "tag2", "tag3"], // optional
             "visibility": "visible", // Optional visibility setting
             "extra_data": {} // Optional extra data to be stored
@@ -144,6 +149,26 @@ an example below:
 ```
 
 [<img src="../test_status.png" width="1253px" />](test_status.png)
+
+### Output String Formatting
+
+You can add rich formatting to your autograder output to further
+customize your autograder experience for students.
+
+
+Options for the the format field are as follows:
+
+* `"text"` (default for test output and names) - This will do the
+basic text formatting which was previously done on all test names
+and outputs. No HTML, Markdown, or ANSI will be rendered.
+* `"html"` - This will render HTML in your output. Note that we sanitize the
+output so you may not be able to use all HTML elements. Additionally, not all
+tags will be styled out of the box.
+* `"simple_format"` (default for top-level output) - This is very
+similar to the `"html"` format option but will also convert `\n`
+into `<br />` and `\n\n+` into a page break.
+* `"md"` - This will render some basic Markdown in your output.
+* `"ansi"` - This will render ANSI colors similar to how the stdout renders them.
 
 ### Leaderboards
 
