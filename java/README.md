@@ -10,7 +10,7 @@ library for producing output in JSON format.
     This example was provided by an early instructor user of the autograder
     platform and is not actively maintained. It may not support all current
     autograder platform functionality. See our
-    [Community Resources page](/resources/) for alternative Java resources.
+    [Community Resources page](https://gradescope-autograders.readthedocs.io/en/latest/resources/) for alternative Java resources.
 
 ## Project Description
 
