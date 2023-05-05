@@ -73,7 +73,10 @@ Your autograder's output should be in the file results.json, in the following fo
 ```
 
 For Java and Python, we have helper libraries that integrate with
-JUnit and unittest to produce this output format easily. Note: You should use Unix line endings (aka `\n`) in your test case outputs to create new lines.
+JUnit and unittest to produce this output format easily.
+
+Note: You should use Unix line endings (aka `\n`) in your test case outputs to
+create new lines.
 
 ### Controlling Test Case Visibility
 
