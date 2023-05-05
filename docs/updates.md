@@ -2,7 +2,7 @@
 
 Here are some updates we've made to our autograder platform. If you have any questions or issues with any of these changes, please email [help@gradescope.com](mailto:help@gradescope.com).
 
-## Mar 22th, 2022
+## Mar 22th, 2023
 
 We have added rich formatting options to the autograder output!
 See [our documentation on the formatting options here](../specs#output-string-formatting) for more information.
