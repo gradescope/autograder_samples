@@ -1,5 +1,9 @@
 # Troubleshooting
 
+You can find frequently asked questions on our
+[support forum](https://github.com/gradescope/autograder_samples/discussions),
+or ask your own questions there.
+
 ## Common error messages
 
 ### Autograder terminated with 'Killed'
@@ -58,3 +62,7 @@ it's not ideal because any print statements will break the JSON structure.
 If you have any further questions, feel free to contact us
 at [help@gradescope.com](mailto:help@gradescope.com). Please mention Autograder
 in the subject line, it'll help us categorize the type of support request.
+
+You can also ask your questions on our
+[support forum](https://github.com/gradescope/autograder_samples/discussions)
+to get help from the community and share your questions with others.
