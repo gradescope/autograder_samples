@@ -71,13 +71,5 @@ possible because they will be more familiar with their own code.
 
 # Pricing
 
-The autograder platform is available with paid school site licenses
-and for individual courses that pay for access to our "Gradescope
-Complete" tier (see our [pricing page](https://www.gradescope.com/pricing)
-for more information).
-
-If you're an existing user or have any questions regarding pricing,
-please contact us at
-[help@gradescope.com](mailto:help@gradescope.com). If you want to
-experiment with the platform to see if it works for you, feel free to
-contact us for trial access.
+The code autograder platform is available with an Institutional license or Institutional Trial.
+If you have any questions regarding pricing, please contact us at sales@gradescope.com.
