@@ -71,5 +71,5 @@ possible because they will be more familiar with their own code.
 
 # Pricing
 
-The code autograder platform is available with an Institutional license or Institutional Trial.
+The code autograder platform is available with an [Institutional license or Institutional Trial](https://turnitin.gradescope.com/advocate).
 If you have any questions regarding pricing, please contact us at sales@gradescope.com.
