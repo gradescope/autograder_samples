@@ -11,6 +11,7 @@ directly.
 
 Name | Description
 -----| -----------
+[jacquard](https://github.com/espertus/jacquard) | A Java library integrated with Checkstyle, PMD, JUnit 5, Jacoco, and JavaParser for customizable autograders
 [jgrade](https://github.com/tkutche1/jgrade) | A Java helper library for building autograders for Gradescope
 [bralax/gradescope_autograder](https://github.com/bralax/gradescope_autograder) | Another Java helper library designed for lower level courses with closer acceess to student code.
 [UCSB Gradescope Tools](https://ucsb-gradescope-tools.github.io/) | Tools and examples for C++ and Python autograders, pulling from GitHub, etc
