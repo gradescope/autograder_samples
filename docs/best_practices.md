@@ -1,6 +1,6 @@
 # Code Autograder Best Practices
 
-Here are some suggestions from our team, as well as from our community of Gradescope users who have built code autograders, around how to build autograders that are secure and robust. If this is your first time building a code autograder, please ensure you first review our [Autograder Specifications](specs/) and example autograders. 
+Here are some suggestions from our team, as well as from our community of Gradescope users who have built code autograders, around how to build autograders that are secure and robust. If this is your first time building a code autograder, please ensure you first review our [Autograder Specifications](/specs/) and example autograders. 
 
 Note that depending on the nature of your programming assignment and the programming language you are using, not all of these best practices may apply.
 
@@ -25,7 +25,7 @@ Regardless of whether the autograder fails, make sure that a results.json file i
 ### Test your autograder prior to releasing the assignment
 
 It is important to test your autograder within Gradescope, as your autograder may behave differently when running locally vs. on our autograder platform.
-When you first set up your programming assignment on Gradescope, set the Release Date to be in the future so that students don’t immediately see the assignment. Once you’ve uploaded your code autograder file, test it via the Test Autograder button on the assignment’s Configure Autograder page with a sample submission that passes all the test cases and a sample submission that fails certain cases, to ensure each test is working as intended. Use the [Debug via SSH](ssh/) option to troubleshoot any issues. You can then update the Release Date/Time for the assignment from the Assignment Settings page.
+When you first set up your programming assignment on Gradescope, set the Release Date to be in the future so that students don’t immediately see the assignment. Once you’ve uploaded your code autograder file, test it via the Test Autograder button on the assignment’s Configure Autograder page with a sample submission that passes all the test cases and a sample submission that fails certain cases, to ensure each test is working as intended. Use the [Debug via SSH](/ssh/) option to troubleshoot any issues. You can then update the Release Date/Time for the assignment from the Assignment Settings page.
 
 ![Test autograder Button](update_and_test_autograder.png)
 
@@ -36,7 +36,7 @@ When you first set up your programming assignment on Gradescope, set the Release
 
 To enhance security, the autograder should be executed as a non-root user. The autograder will begin running your code as `root`, so that you (the instructor) can have full privileges to do what you need to do. However, we recommend that you run the students’ code with minimal privileges to reduce the risk of potential unauthorized access or changes to the current submission’s score. 
 
-To add non-root users, you can add a user with the Ubuntu [base image](base_images/), such as `adduser student --no-create-home --disabled-password --gecos ""` (Note: This command will differ based on the base image you select.) We recommend adding users in your autograder setup files, although this can be done anywhere and at any time prior to running the student code with that user.
+To add non-root users, you can add a user with the Ubuntu [base image](/base_images/), such as `adduser student --no-create-home --disabled-password --gecos ""` (Note: This command will differ based on the base image you select.) We recommend adding users in your autograder setup files, although this can be done anywhere and at any time prior to running the student code with that user.
 
 When you add the student user, you should use `chmod o= <file>` to remove access to the source and results directories, so the student code is unable to access those directories. Make sure to give read/write permissions to files in the source folder, which the executing student code needs. Then you should be able to execute the student code by first changing your user, such as with `runuser -u student -- COMMAND`, before you execute the student code. Here’s some example code to see this working with Ubuntu 22.04 (note that other base images may have different commands to add users and run as a user):
 
