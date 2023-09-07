@@ -62,7 +62,7 @@ $ whoami
 root
 ```
 
-### Isolate Student Code Execution
+### Isolate student code execution
 
 Execute student code within a separate subprocess from the autograder code. This isolation prevents direct interaction between the student's code and the autograder's code, ensuring that the student's code doesn't interfere with the autograder's functionality. For example, if you are using Python, you should not import a student's code directly in your autograder. Instead, we recommend that you create a small, untrusted, wrapper around the student code which may run it in some way. Then you should have your autograder read the results and then perform its normal action. This will prevent the student from interrupting your autograder.
 
