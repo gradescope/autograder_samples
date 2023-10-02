@@ -2,6 +2,24 @@
 
 Here are some updates we've made to our autograder platform. If you have any questions or issues with any of these changes, please email [help@gradescope.com](mailto:help@gradescope.com).
 
+## Oct 2nd, 2023
+
+We have added the following base images:
+
+* Centos 8
+* Fedora 35
+* Fedora 37
+* Fedora 38
+* Rocky 8.5
+* Rocky 9
+
+We have also added the JDK 8, 11, and 17 variants to Ubuntu 18.04 and 20.04.
+
+In addition, we have changed the default version of:
+
+* Fedora from 36 to 38 
+* Rocky from 8 to 9.
+
 ## Mar 22th, 2023
 
 We have added rich formatting options to the autograder output!
