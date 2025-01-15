@@ -35,7 +35,8 @@ information:
     {
       "submission_time": "2017-04-06T14:24:48.087023-07:00",// previous submission time
       "score": 0.0, // Previous submission score
-      "results": { ... } // Previous submission results object
+      "autograder_error": true|false // If true, this submission failed to run at no fault of the student.
+      "results": { ... } // Previous submission results object, ONLY for the latest previous submission.
     }, ...
   ]
 }
