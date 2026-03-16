@@ -60,3 +60,8 @@ When implementing such schemes, be sure to compute time periods based
 on the current submission's "created_at" (submission time) -
 otherwise, re-running the autograder will cause the rate limits to be
 computed based on the current system time.
+
+We recommend only counting previous submissions when autograder_error
+is false. A true value for autograder_error communicates there was an
+autograder failure on the Gradescope side and should not be counted
+against the student.
